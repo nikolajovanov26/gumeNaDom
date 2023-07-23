@@ -534,6 +534,17 @@ body {
     border-radius: 16px;
 }
 
+/******* TRANSITION ******/
+.transition-all {
+    transition: all 0.2s;
+}
+
+/******** OPACITY ********/
+
+.opacity-80 {
+    opacity: 0.8;
+}
+
 /******** DISPLAY ********/
 .block {
     display: block;
@@ -1353,6 +1364,10 @@ body {
         display: none;
     }
 
+    .screen-m-display-block {
+        display: block;
+    }
+
     .screen-m-display-flex {
         display: flex;
     }
@@ -1771,4 +1786,7 @@ body {
         margin-top: 36px;
     }
 
+    .footer-link {
+        font-size: 14px;
+    }
 }

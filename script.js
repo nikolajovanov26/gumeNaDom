@@ -10,17 +10,78 @@ fetch("components/blog.html")
         document.getElementById("blog").innerHTML = html;
     });
 
-fetch("components/footer.html")
-    .then(response => response.text())
-    .then(html => {
-        document.getElementById("footer").innerHTML = html;
-    });
-
 loadMore = document.querySelector('.load-more');
 loadMore.addEventListener('click', function () {
     document.querySelectorAll('.show-more-mobile').forEach(card => card.classList.remove('show-more-mobile'))
     loadMore.style.display = 'none'
 })
+
+async function fetchFooterAndAddEventListener() {
+    try {
+        const response = await fetch("components/footer.html");
+        const html = await response.text();
+        document.getElementById("footer").innerHTML = html;
+
+        // Now that the footer content has been loaded, add the event listener.
+        document.querySelector('#footer-main-menu').addEventListener('click', function () {
+            div = document.querySelector('#footer-main-menu-div');
+
+            if (div.style.display === 'none') {
+                div.style.display = 'block';
+                document.querySelector('#footer-main-menu img').style.transform = 'rotate(0deg)';
+                setTimeout(function() {
+                    div.style.height = '100%';
+                }, 100);
+            } else {
+                document.querySelector('#footer-main-menu img').style.transform = 'rotate(-90deg)';
+                div.style.height = '0%';
+                setTimeout(function() {
+                    div.style.display = 'none';
+                }, 230)
+            }
+        });
+
+        document.querySelector('#footer-fast-links').addEventListener('click', function () {
+            div = document.querySelector('#footer-fast-links-div');
+            if (div.style.display === 'none') {
+                div.style.display = 'block';
+                document.querySelector('#footer-fast-links img').style.transform = 'rotate(0deg)';
+                setTimeout(function() {
+                    div.style.height = '100%';
+                }, 100);
+            } else {
+                document.querySelector('#footer-fast-links img').style.transform = 'rotate(-90deg)';
+                div.style.height = '0%';
+                setTimeout(function() {
+                    div.style.display = 'none';
+                }, 230)
+            }
+
+        });
+
+        document.querySelector('#footer-my-account').addEventListener('click', function () {
+            div = document.querySelector('#footer-my-account-div');
+            if (div.style.display === 'none') {
+                div.style.display = 'block';
+                document.querySelector('#footer-my-account img').style.transform = 'rotate(0deg)';
+                setTimeout(function() {
+                    div.style.height = '100%';
+                }, 100);
+            } else {
+                document.querySelector('#footer-my-account img').style.transform = 'rotate(-90deg)';
+                div.style.height = '0%';
+                setTimeout(function() {
+                    div.style.display = 'none';
+                }, 230)
+            }
+        });
+    } catch (error) {
+        console.error('Error fetching footer:', error);
+    }
+}
+
+// Call the function to start the process.
+fetchFooterAndAddEventListener();
 
 var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "filter-select":*/
