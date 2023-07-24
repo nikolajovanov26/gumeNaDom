@@ -22,6 +22,17 @@ async function fetchFooterAndAddEventListener() {
         const html = await response.text();
         document.getElementById("footer").innerHTML = html;
 
+        currentPageUrl = window.location.href;
+
+        footerLinks = document.querySelectorAll('.footer-link');
+
+        footerLinks.forEach(function(link) {
+            if (link.href === currentPageUrl) {
+                // Add a class to the link to style it as the current page
+                link.classList.add('footer-current-page');
+            }
+        });
+
         if (screen.width < 768) {
             document.querySelector('#footer-main-menu img').style.transform = 'rotate(-90deg)';
             document.querySelector('#footer-my-account img').style.transform = 'rotate(-90deg)';
