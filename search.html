@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Gume Na Dom</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="navigation" class="bg-black"></div>
+<div id="banner" class="flex align-center justify-center"
+     style="background-image: url('images/tire.png'), url('images/search_hero.png');">
+    <div class="flex align-center container-lg col-gap-40">
+        <div class="flex flex-col row-gap-15">
+            <span class="text-75 l-height-57px font-semi-bold family-jost l-height-1">50%</span>
+            <span class="uppercase family-jost font-medium text-15 letter-spacing-1-5">sezonsko snizenje do</span>
+            <div class="bold-horizontal-separator" style="margin-top:-9px"></div>
+        </div>
+        <div class="max-w-410px flex flex-col row-gap-15">
+            <span class="font-semi-bold family-jost text-21 l-height-1-3">Michelin Primacy MXV4 All-Season 215/55R17 94V Tire</span>
+            <a href="#" class="hero-cta" style="margin-top:-2px">Kupi</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="search" class="flex align-center justify-center">
+    <div class="container-lg flex align-start justify-ends col-gap-22 pt-30 pb-90">
+        <form id="search-filter" action="" method="" class="no-shrink w-1-5">
+            <div class="flex flex-col row-gap-30">
+                <div class="flex flex-col row-gap-15">
+                    <div class="flex flex-col row-gap-8 w-full">
+                        <div class="flex col-gap-8 align-center">
+                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 screen-m-text-12 l-height-1-7">Širina</span>
+                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                        </div>
+
+                        <div class="filter-select">
+                            <select>
+                                <option value="195">195</option>
+                                <option value="195">195</option>
+                                <option value="200">200</option>
+                                <option value="210">210</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col row-gap-8 w-full">
+                        <div class="flex col-gap-8 align-center">
+                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Visina</span>
+                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                        </div>
+
+                        <div class="filter-select">
+                            <select>
+                                <option value="55">55</option>
+                                <option value="55">55</option>
+                                <option value="60">60</option>
+                                <option value="65">65</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col row-gap-8 w-full">
+                        <div class="flex col-gap-8 align-center">
+                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Presek</span>
+                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                        </div>
+
+                        <div class="filter-select">
+                            <select>
+                                <option value="R14">R14</option>
+                                <option value="R14">R14</option>
+                                <option value="R16">R16</option>
+                                <option value="R18">R18</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="flex flex-col row-gap-8 w-full">
+                        <div class="flex col-gap-8 align-center">
+                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Sezone</span>
+                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                        </div>
+
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="gumi" value="vsi" type="radio" checked>
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">---VSI---</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="gumi" value="letne"  type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">Letne</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="gumi" value="zimske" type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">Zimske</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="gumi" value="celoletne" type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">Celoletne</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-col row-gap-8 w-full">
+                        <div class="flex col-gap-8 align-center">
+                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Vrsta</span>
+                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                        </div>
+
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="vrsta" value="vsi" type="radio" checked>
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">---VSI---</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="vrsta" value="avto"  type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">Avto gume</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="vrsta" value="kamion" type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">Kamion/Kombi</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="vrsta" value="suv" type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">SUV</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="vrsta" value="moto" type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">MOTO gume</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="vrsta" value="tovarne" type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">Tovorne/Kmetijske</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-col row-gap-8 w-full">
+                        <div class="flex col-gap-8 align-center">
+                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Znamka</span>
+                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                        </div>
+
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="znamka" value="vsi" type="radio" checked>
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">---VSI---</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="znamka" value="aplus"  type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">Aplus</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="znamka" value="austone" type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">Austone</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="znamka" value="barum" type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">Barum</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="znamka" value="goodrich" type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">BF Goodrich</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="znamka" value="bridgestone" type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">Bridgestone</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-col row-gap-8 w-full">
+                        <div class="flex col-gap-8 align-center">
+                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Ostalo</span>
+                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                        </div>
+
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="ostalo" value="rft" type="radio" checked>
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">Runflat RFT</span>
+                        </label>
+                        <label class="flex align-center pv-8">
+                            <div class="checkmark"></div>
+                            <input name="ostalo" value="xl"  type="radio">
+                            <span class="family-urbanist font-bold text-14 letter-spacing-0-4">XL</span>
+                        </label>
+
+                    </div>
+                </div>
+                <div>CENA</div>
+            </div>
+
+            <button type="submit" class="mt-30 uppercase bg-yellow-400 col-gap-8 radius-8 flex font-bold text-16 align-center justify-center border-0 w-full shadow-xl h-56px">
+                Išči
+                <img src="icons/search.svg" alt="search icon" class="h-21px">
+            </button>
+        </form>
+        <div class="w-full mt-30 flex flex-col row-gap-30">
+            <div class="flex w-full align-center radius-8 border-gray-100 border-1">
+                <div class="relative no-shrink border-gray-100 border-r-1">
+                    <img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
+                    <div class="product-buttons-div" style="top: 10px; left: 10px">
+                        <div class="product-button">
+                            <img src="icons/compare-black.svg" alt="compare icon" class="h-21px">
+                        </div>
+                        <div class="product-button">
+                            <img src="icons/heart-black.svg" alt="heart icon" class="h-21px">
+                        </div>
+                    </div>
+                    <div class="top-offer-tag" style="bottom: 3px; left: 3px">
+                        Top ponudba
+                    </div>
+                </div>
+                <div class="flex justify-ends w-full">
+                    <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
+                        <div class="flex flex-col align-start">
+                            <img src="logo/pirelli.svg" class="prelli logo" height="30px">
+                            <span class="font-semi-bold text-21 l-height-1-3 mt-6 max-w-250px">GOODYEAR 205/55 R16 91H UltraGrip 9+</span>
+                            <span class="text-16 l-height-1-2 mt-6 text-gray-500">KUMHO AVTO guma za ZIMSKO sezono , dimenzije: 175/50/R15</span>
+                        </div>
+
+                        <div class="flex align-center col-gap-12 text-16 font-medium mt-6">
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/rim-tyre.png" alt="rim tyre icon" height="23px">
+                                A
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/gas-station-fuel.svg" alt="gas station fuel icon" height="23px">
+                                B
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sound-max.svg" alt="sound icon" height="23px">
+                                72
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sun.svg" alt="sun icon" height="23px">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pr-36 flex-col flex row-gap-15">
+                        <div class="flex align-bottom col-gap-8">
+                            <span class="font-semi-bold text-22">148.86€</span>
+                            <span class="text-14 text-gray-500 linethrough">156.00<b>€</b></span>
+                        </div>
+                        <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-10"><span class="text-pink-400">*</span>cena s popustom za plačilo preko UPN</span>
+                        <div class="flex col-gap-12">
+                            <div class="quantity">
+                                <input type="number" min="0" max="100" value="0" class="quantityInput">
+                                <div class="number-buttons">
+                                    <img class="incrementBtn pointer block" src="icons/increment.svg" width="9px">
+                                    <img class="decrementBtn pointer block" src="icons/decrement.svg" width="9px">
+                                </div>
+                            </div>
+
+                            <button class="add-to-cart-button w-226px">
+                                Dodaj u korpu
+                                <img src="icons/shopping-cart.svg" alt="cart-icon" width="18">
+                            </button>
+                        </div>
+                        <div class="horizontal-separator"></div>
+                        <div class="flex justify-ends align-center">
+                            <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
+                            <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex w-full align-center radius-8 border-gray-100 border-1">
+                <div class="relative no-shrink border-gray-100 border-r-1">
+                    <img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
+                    <div class="product-buttons-div" style="top: 10px; left: 10px">
+                        <div class="product-button">
+                            <img src="icons/compare-black.svg" alt="compare icon" class="h-21px">
+                        </div>
+                        <div class="product-button">
+                            <img src="icons/heart-black.svg" alt="heart icon" class="h-21px">
+                        </div>
+                    </div>
+                    <div class="top-offer-tag" style="bottom: 3px; left: 3px">
+                        Top ponudba
+                    </div>
+                </div>
+                <div class="flex justify-ends w-full">
+                    <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
+                        <div class="flex flex-col align-start">
+                            <img src="logo/pirelli.svg" class="prelli logo" height="30px">
+                            <span class="font-semi-bold text-21 l-height-1-3 mt-6 max-w-250px">GOODYEAR 205/55 R16 91H UltraGrip 9+</span>
+                            <span class="text-16 l-height-1-2 mt-6 text-gray-500">KUMHO AVTO guma za ZIMSKO sezono , dimenzije: 175/50/R15</span>
+                        </div>
+
+                        <div class="flex align-center col-gap-12 text-16 font-medium mt-6">
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/rim-tyre.png" alt="rim tyre icon" height="23px">
+                                A
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/gas-station-fuel.svg" alt="gas station fuel icon" height="23px">
+                                B
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sound-max.svg" alt="sound icon" height="23px">
+                                72
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sun.svg" alt="sun icon" height="23px">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pr-36 flex-col flex row-gap-15">
+                        <div class="flex align-bottom col-gap-8">
+                            <span class="font-semi-bold text-22">148.86€</span>
+                            <span class="text-14 text-gray-500 linethrough">156.00<b>€</b></span>
+                        </div>
+                        <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-10"><span class="text-pink-400">*</span>cena s popustom za plačilo preko UPN</span>
+                        <div class="flex col-gap-12">
+                            <div class="quantity">
+                                <input type="number" min="0" max="100" value="0" class="quantityInput">
+                                <div class="number-buttons">
+                                    <img class="incrementBtn pointer block" src="icons/increment.svg" width="9px">
+                                    <img class="decrementBtn pointer block" src="icons/decrement.svg" width="9px">
+                                </div>
+                            </div>
+
+                            <button class="add-to-cart-button w-226px">
+                                Dodaj u korpu
+                                <img src="icons/shopping-cart.svg" alt="cart-icon" width="18">
+                            </button>
+                        </div>
+                        <div class="horizontal-separator"></div>
+                        <div class="flex justify-ends align-center">
+                            <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
+                            <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex w-full align-center radius-8 border-gray-100 border-1">
+                <div class="relative no-shrink border-gray-100 border-r-1">
+                    <img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
+                    <div class="product-buttons-div" style="top: 10px; left: 10px">
+                        <div class="product-button">
+                            <img src="icons/compare-black.svg" alt="compare icon" class="h-21px">
+                        </div>
+                        <div class="product-button">
+                            <img src="icons/heart-black.svg" alt="heart icon" class="h-21px">
+                        </div>
+                    </div>
+                    <div class="top-offer-tag" style="bottom: 3px; left: 3px">
+                        Top ponudba
+                    </div>
+                </div>
+                <div class="flex justify-ends w-full">
+                    <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
+                        <div class="flex flex-col align-start">
+                            <img src="logo/pirelli.svg" class="prelli logo" height="30px">
+                            <span class="font-semi-bold text-21 l-height-1-3 mt-6 max-w-250px">GOODYEAR 205/55 R16 91H UltraGrip 9+</span>
+                            <span class="text-16 l-height-1-2 mt-6 text-gray-500">KUMHO AVTO guma za ZIMSKO sezono , dimenzije: 175/50/R15</span>
+                        </div>
+
+                        <div class="flex align-center col-gap-12 text-16 font-medium mt-6">
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/rim-tyre.png" alt="rim tyre icon" height="23px">
+                                A
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/gas-station-fuel.svg" alt="gas station fuel icon" height="23px">
+                                B
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sound-max.svg" alt="sound icon" height="23px">
+                                72
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sun.svg" alt="sun icon" height="23px">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pr-36 flex-col flex row-gap-15">
+                        <div class="flex align-bottom col-gap-8">
+                            <span class="font-semi-bold text-22">148.86€</span>
+                            <span class="text-14 text-gray-500 linethrough">156.00<b>€</b></span>
+                        </div>
+                        <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-10"><span class="text-pink-400">*</span>cena s popustom za plačilo preko UPN</span>
+                        <div class="flex col-gap-12">
+                            <div class="quantity">
+                                <input type="number" min="0" max="100" value="0" class="quantityInput">
+                                <div class="number-buttons">
+                                    <img class="incrementBtn pointer block" src="icons/increment.svg" width="9px">
+                                    <img class="decrementBtn pointer block" src="icons/decrement.svg" width="9px">
+                                </div>
+                            </div>
+
+                            <button class="add-to-cart-button w-226px">
+                                Dodaj u korpu
+                                <img src="icons/shopping-cart.svg" alt="cart-icon" width="18">
+                            </button>
+                        </div>
+                        <div class="horizontal-separator"></div>
+                        <div class="flex justify-ends align-center">
+                            <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
+                            <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex w-full align-center radius-8 border-gray-100 border-1">
+                <div class="relative no-shrink border-gray-100 border-r-1">
+                    <img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
+                    <div class="product-buttons-div" style="top: 10px; left: 10px">
+                        <div class="product-button">
+                            <img src="icons/compare-black.svg" alt="compare icon" class="h-21px">
+                        </div>
+                        <div class="product-button">
+                            <img src="icons/heart-black.svg" alt="heart icon" class="h-21px">
+                        </div>
+                    </div>
+                    <div class="top-offer-tag" style="bottom: 3px; left: 3px">
+                        Top ponudba
+                    </div>
+                </div>
+                <div class="flex justify-ends w-full">
+                    <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
+                        <div class="flex flex-col align-start">
+                            <img src="logo/pirelli.svg" class="prelli logo" height="30px">
+                            <span class="font-semi-bold text-21 l-height-1-3 mt-6 max-w-250px">GOODYEAR 205/55 R16 91H UltraGrip 9+</span>
+                            <span class="text-16 l-height-1-2 mt-6 text-gray-500">KUMHO AVTO guma za ZIMSKO sezono , dimenzije: 175/50/R15</span>
+                        </div>
+
+                        <div class="flex align-center col-gap-12 text-16 font-medium mt-6">
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/rim-tyre.png" alt="rim tyre icon" height="23px">
+                                A
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/gas-station-fuel.svg" alt="gas station fuel icon" height="23px">
+                                B
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sound-max.svg" alt="sound icon" height="23px">
+                                72
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sun.svg" alt="sun icon" height="23px">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pr-36 flex-col flex row-gap-15">
+                        <div class="flex align-bottom col-gap-8">
+                            <span class="font-semi-bold text-22">148.86€</span>
+                            <span class="text-14 text-gray-500 linethrough">156.00<b>€</b></span>
+                        </div>
+                        <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-10"><span class="text-pink-400">*</span>cena s popustom za plačilo preko UPN</span>
+                        <div class="flex col-gap-12">
+                            <div class="quantity">
+                                <input type="number" min="0" max="100" value="0" class="quantityInput">
+                                <div class="number-buttons">
+                                    <img class="incrementBtn pointer block" src="icons/increment.svg" width="9px">
+                                    <img class="decrementBtn pointer block" src="icons/decrement.svg" width="9px">
+                                </div>
+                            </div>
+
+                            <button class="add-to-cart-button w-226px">
+                                Dodaj u korpu
+                                <img src="icons/shopping-cart.svg" alt="cart-icon" width="18">
+                            </button>
+                        </div>
+                        <div class="horizontal-separator"></div>
+                        <div class="flex justify-ends align-center">
+                            <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
+                            <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex w-full align-center radius-8 border-gray-100 border-1">
+                <div class="relative no-shrink border-gray-100 border-r-1">
+                    <img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
+                    <div class="product-buttons-div" style="top: 10px; left: 10px">
+                        <div class="product-button">
+                            <img src="icons/compare-black.svg" alt="compare icon" class="h-21px">
+                        </div>
+                        <div class="product-button">
+                            <img src="icons/heart-black.svg" alt="heart icon" class="h-21px">
+                        </div>
+                    </div>
+                    <div class="top-offer-tag" style="bottom: 3px; left: 3px">
+                        Top ponudba
+                    </div>
+                </div>
+                <div class="flex justify-ends w-full">
+                    <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
+                        <div class="flex flex-col align-start">
+                            <img src="logo/pirelli.svg" class="prelli logo" height="30px">
+                            <span class="font-semi-bold text-21 l-height-1-3 mt-6 max-w-250px">GOODYEAR 205/55 R16 91H UltraGrip 9+</span>
+                            <span class="text-16 l-height-1-2 mt-6 text-gray-500">KUMHO AVTO guma za ZIMSKO sezono , dimenzije: 175/50/R15</span>
+                        </div>
+
+                        <div class="flex align-center col-gap-12 text-16 font-medium mt-6">
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/rim-tyre.png" alt="rim tyre icon" height="23px">
+                                A
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/gas-station-fuel.svg" alt="gas station fuel icon" height="23px">
+                                B
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sound-max.svg" alt="sound icon" height="23px">
+                                72
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sun.svg" alt="sun icon" height="23px">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pr-36 flex-col flex row-gap-15">
+                        <div class="flex align-bottom col-gap-8">
+                            <span class="font-semi-bold text-22">148.86€</span>
+                            <span class="text-14 text-gray-500 linethrough">156.00<b>€</b></span>
+                        </div>
+                        <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-10"><span class="text-pink-400">*</span>cena s popustom za plačilo preko UPN</span>
+                        <div class="flex col-gap-12">
+                            <div class="quantity">
+                                <input type="number" min="0" max="100" value="0" class="quantityInput">
+                                <div class="number-buttons">
+                                    <img class="incrementBtn pointer block" src="icons/increment.svg" width="9px">
+                                    <img class="decrementBtn pointer block" src="icons/decrement.svg" width="9px">
+                                </div>
+                            </div>
+
+                            <button class="add-to-cart-button w-226px">
+                                Dodaj u korpu
+                                <img src="icons/shopping-cart.svg" alt="cart-icon" width="18">
+                            </button>
+                        </div>
+                        <div class="horizontal-separator"></div>
+                        <div class="flex justify-ends align-center">
+                            <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
+                            <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex w-full align-center radius-8 border-gray-100 border-1">
+                <div class="relative no-shrink border-gray-100 border-r-1">
+                    <img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
+                    <div class="product-buttons-div" style="top: 10px; left: 10px">
+                        <div class="product-button">
+                            <img src="icons/compare-black.svg" alt="compare icon" class="h-21px">
+                        </div>
+                        <div class="product-button">
+                            <img src="icons/heart-black.svg" alt="heart icon" class="h-21px">
+                        </div>
+                    </div>
+                    <div class="top-offer-tag" style="bottom: 3px; left: 3px">
+                        Top ponudba
+                    </div>
+                </div>
+                <div class="flex justify-ends w-full">
+                    <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
+                        <div class="flex flex-col align-start">
+                            <img src="logo/pirelli.svg" class="prelli logo" height="30px">
+                            <span class="font-semi-bold text-21 l-height-1-3 mt-6 max-w-250px">GOODYEAR 205/55 R16 91H UltraGrip 9+</span>
+                            <span class="text-16 l-height-1-2 mt-6 text-gray-500">KUMHO AVTO guma za ZIMSKO sezono , dimenzije: 175/50/R15</span>
+                        </div>
+
+                        <div class="flex align-center col-gap-12 text-16 font-medium mt-6">
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/rim-tyre.png" alt="rim tyre icon" height="23px">
+                                A
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/gas-station-fuel.svg" alt="gas station fuel icon" height="23px">
+                                B
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sound-max.svg" alt="sound icon" height="23px">
+                                72
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sun.svg" alt="sun icon" height="23px">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pr-36 flex-col flex row-gap-15">
+                        <div class="flex align-bottom col-gap-8">
+                            <span class="font-semi-bold text-22">148.86€</span>
+                            <span class="text-14 text-gray-500 linethrough">156.00<b>€</b></span>
+                        </div>
+                        <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-10"><span class="text-pink-400">*</span>cena s popustom za plačilo preko UPN</span>
+                        <div class="flex col-gap-12">
+                            <div class="quantity">
+                                <input type="number" min="0" max="100" value="0" class="quantityInput">
+                                <div class="number-buttons">
+                                    <img class="incrementBtn pointer block" src="icons/increment.svg" width="9px">
+                                    <img class="decrementBtn pointer block" src="icons/decrement.svg" width="9px">
+                                </div>
+                            </div>
+
+                            <button class="add-to-cart-button w-226px">
+                                Dodaj u korpu
+                                <img src="icons/shopping-cart.svg" alt="cart-icon" width="18">
+                            </button>
+                        </div>
+                        <div class="horizontal-separator"></div>
+                        <div class="flex justify-ends align-center">
+                            <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
+                            <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex w-full align-center radius-8 border-gray-100 border-1">
+                <div class="relative no-shrink border-gray-100 border-r-1">
+                    <img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
+                    <div class="product-buttons-div" style="top: 10px; left: 10px">
+                        <div class="product-button">
+                            <img src="icons/compare-black.svg" alt="compare icon" class="h-21px">
+                        </div>
+                        <div class="product-button">
+                            <img src="icons/heart-black.svg" alt="heart icon" class="h-21px">
+                        </div>
+                    </div>
+                    <div class="top-offer-tag" style="bottom: 3px; left: 3px">
+                        Top ponudba
+                    </div>
+                </div>
+                <div class="flex justify-ends w-full">
+                    <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
+                        <div class="flex flex-col align-start">
+                            <img src="logo/pirelli.svg" class="prelli logo" height="30px">
+                            <span class="font-semi-bold text-21 l-height-1-3 mt-6 max-w-250px">GOODYEAR 205/55 R16 91H UltraGrip 9+</span>
+                            <span class="text-16 l-height-1-2 mt-6 text-gray-500">KUMHO AVTO guma za ZIMSKO sezono , dimenzije: 175/50/R15</span>
+                        </div>
+
+                        <div class="flex align-center col-gap-12 text-16 font-medium mt-6">
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/rim-tyre.png" alt="rim tyre icon" height="23px">
+                                A
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/gas-station-fuel.svg" alt="gas station fuel icon" height="23px">
+                                B
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sound-max.svg" alt="sound icon" height="23px">
+                                72
+                            </div>
+                            <div class="flex align-center col-gap-8">
+                                <img src="icons/sun.svg" alt="sun icon" height="23px">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pr-36 flex-col flex row-gap-15">
+                        <div class="flex align-bottom col-gap-8">
+                            <span class="font-semi-bold text-22">148.86€</span>
+                            <span class="text-14 text-gray-500 linethrough">156.00<b>€</b></span>
+                        </div>
+                        <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-10"><span class="text-pink-400">*</span>cena s popustom za plačilo preko UPN</span>
+                        <div class="flex col-gap-12">
+                            <div class="quantity">
+                                <input type="number" min="0" max="100" value="0" class="quantityInput">
+                                <div class="number-buttons">
+                                    <img class="incrementBtn pointer block" src="icons/increment.svg" width="9px">
+                                    <img class="decrementBtn pointer block" src="icons/decrement.svg" width="9px">
+                                </div>
+                            </div>
+
+                            <button class="add-to-cart-button w-226px">
+                                Dodaj u korpu
+                                <img src="icons/shopping-cart.svg" alt="cart-icon" width="18">
+                            </button>
+                        </div>
+                        <div class="horizontal-separator"></div>
+                        <div class="flex justify-ends align-center">
+                            <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
+                            <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<div id="newsletter" class="bg-yellow-400 flex align-center justify-ends"></div>
+<div id="blog" class="flex align-center justify-center"></div>
+<div id="footer" class="bg-black text-white flex align-center justify-center"></div>
+
+<script src="script.js"></script>
+<script src="navigation.js"></script>
+<script src="blog.js"></script>
+<script src="newsletter.js"></script>
+<script src="footer.js"></script>
+</body>
+
+</html>

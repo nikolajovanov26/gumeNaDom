@@ -132,6 +132,10 @@ body {
     font-size: 74px;
 }
 
+.text-75 {
+    font-size: 75px;
+}
+
 .text-42 {
     font-size: 42px;
 }
@@ -217,6 +221,10 @@ body {
     line-height: 24px;
 }
 
+.l-height-57px {
+    line-height: 57px;
+}
+
 .l-height-92px {
     line-height: 92px;
 }
@@ -278,6 +286,10 @@ body {
     width: 50%;
 }
 
+.w-1-5 {
+    width: 20%;
+}
+
 .w-4-5 {
     width: 80%;
 }
@@ -300,6 +312,10 @@ body {
 
 .w-158px {
     width: 158px;
+}
+
+.w-226px {
+    width: 226px;
 }
 
 .w-259px {
@@ -373,6 +389,11 @@ body {
     height: 40px;
 }
 
+.h-56px {
+    height: 56px;
+}
+
+
 .h-125px {
     height: 125px;
 }
@@ -412,6 +433,11 @@ body {
     padding-bottom: 64px;
 }
 
+.pv-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
 .pv-15 {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -439,8 +465,16 @@ body {
     padding-right: 56px;
 }
 
+.pr-36 {
+    padding-right: 36px;
+}
+
 .pt-35 {
     padding-top: 35px;
+}
+
+.pt-30 {
+    padding-top: 30px;
 }
 
 .pt-60 {
@@ -544,6 +578,10 @@ body {
     border: 0;
 }
 
+.border-r-1 {
+    border-right: 1px solid;
+}
+
 .border-l-1 {
     border-left: 1px solid;
 }
@@ -573,6 +611,11 @@ body {
 
 .radius-16 {
     border-radius: 16px;
+}
+
+/******* CURSOR ******/
+.pointer {
+    cursor: pointer;
 }
 
 /******* TRANSITION ******/
@@ -647,12 +690,20 @@ body {
     column-gap: 12px;
 }
 
+.col-gap-22 {
+    column-gap: 22px;
+}
+
 .row-gap-8 {
     row-gap: 8px;
 }
 
 .row-gap-15 {
     row-gap: 15px;
+}
+
+.row-gap-30 {
+    row-gap: 30px;
 }
 
 .row-gap-36 {
@@ -682,6 +733,11 @@ body {
 .col-gap-32 {
     column-gap: 32px;
 }
+
+.col-gap-40 {
+    column-gap: 40px;
+}
+
 
 .col-gap-48 {
     column-gap: 48px;
@@ -1004,9 +1060,104 @@ body {
     cursor: pointer;
 }
 
+#search-filter label {
+    position: relative;
+}
+
+#search-filter input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+#search-filter .checkmark {
+    position: relative;
+    min-height: 40px;
+    min-width: 40px;
+    background-color: #F8FAFC;
+    margin-right: 16px;
+    border-radius: 8px;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-filter label:has(input[type="radio"]) .checkmark::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#search-filter label:has(input[type="radio"]:checked) .checkmark::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#search-filter button {
+    background-color: #FFD601;
+    color: #0F172A;
+    transition: all 0.2s;
+}
+
+#search-filter button:hover {
+    background-color: #E6C100;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity {
+    display: flex;
+}
+
+.quantity input {
+    width: 31px;
+    height: 42px;
+    line-height: 1.7;
+    border: 1px solid #ECEFF4;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.number-buttons {
+    width: 25px;
+    height: 42px;
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid #ECEFF4;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    border-left: 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
 /******** SHADOWS ***********/
 .shadow-m {
     box-shadow: 0px 0px 4px #D9DEE940;
+}
+
+shadow-xl {
+    box-shadow: 4px 4px 35px #A4A3BD4D;
 }
 
 /******** COMPONENTS ********/
@@ -1184,7 +1335,7 @@ body {
     display: grid;
     gap: 20px;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(max(300px,23%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(max(300px, 23%), 1fr));
 }
 
 .dimension-link {
@@ -1213,6 +1364,15 @@ body {
     background-size: 400px, cover;
     background-repeat: no-repeat;
     background-position: 830px 630px, left bottom;
+}
+
+#banner {
+    padding-top: 146px;
+    height: 185px;
+    background-color: #FFD601;
+    background-size: 200px, 55%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%, right bottom;
 }
 
 #menu {
@@ -1374,7 +1534,7 @@ body {
 }
 
 .footer-current-page {
-    text-decoration: underline!important;
+    text-decoration: underline !important;
 }
 
 .footer-link {

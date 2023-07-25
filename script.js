@@ -76,3 +76,30 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+document.querySelectorAll('.quantity').forEach(quantity => {
+    var quantityInput = quantity.querySelector('.quantityInput');
+    var incrementBtn = quantity.querySelector('.incrementBtn');
+    var decrementBtn = quantity.querySelector('.decrementBtn');
+
+    incrementBtn.addEventListener('click', function () {
+        var currentValue = parseFloat(quantityInput.value);
+        var step = parseFloat(quantityInput.getAttribute('step')) || 1;
+        var min = parseFloat(quantityInput.getAttribute('min'));
+        var max = parseFloat(quantityInput.getAttribute('max'));
+        newValue = Math.min(Math.max(currentValue + step, min), max); // Ensure the value is within min and max range
+        quantityInput.value = newValue;
+        quantityInput.dispatchEvent(new Event('change')); // Trigger 'change' event for potential listeners
+    });
+
+    decrementBtn.addEventListener('click', function () {
+        var currentValue = parseFloat(quantityInput.value);
+        var step = parseFloat(quantityInput.getAttribute('step')) || 1;
+        var min = parseFloat(quantityInput.getAttribute('min'));
+        var max = parseFloat(quantityInput.getAttribute('max'));
+        newValue = Math.min(Math.max(currentValue - step, min), max); // Ensure the value is within min and max range
+        quantityInput.value = newValue;
+        quantityInput.dispatchEvent(new Event('change')); // Trigger 'change' event for potential listeners
+    });
+
+})
