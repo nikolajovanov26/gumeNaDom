@@ -687,6 +687,11 @@ body {
     column-gap: 48px;
 }
 
+/******** ASPECT RATION ********/
+.aspect-ratio-7-5 {
+    aspect-ratio: 7 / 5;
+}
+
 /******** POSITION ********/
 .relative {
     position: relative;
@@ -1178,7 +1183,8 @@ body {
 .summer-offer-grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(max(300px,23%), 1fr));
 }
 
 .dimension-link {
