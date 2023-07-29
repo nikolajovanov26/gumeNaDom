@@ -213,6 +213,10 @@ body {
     line-height: 1.4;
 }
 
+.l-height-1-5 {
+    line-height: 1.5;
+}
+
 .l-height-1-7 {
     line-height: 1.7;
 }
@@ -525,12 +529,24 @@ body {
     margin-top: 25px;
 }
 
+.mr-24 {
+    margin-right: 24px;
+}
+
 .mr-50 {
     margin-right: 50px;
 }
 
+.mr-88 {
+    margin-right: 88px;
+}
+
 .mb-60 {
     margin-bottom: 60px;
+}
+
+.mb-43 {
+    margin-bottom: 43px;
 }
 
 .mb-40 {
@@ -563,6 +579,10 @@ body {
 
 .ml-10 {
     margin-right: 10px;
+}
+
+.ml-24 {
+    margin-left: 24px;
 }
 
 .mt-30 {
@@ -700,6 +720,10 @@ body {
 
 .col-gap-12 {
     column-gap: 12px;
+}
+
+.col-gap-16 {
+    column-gap: 16px;
 }
 
 .col-gap-22 {
@@ -916,7 +940,7 @@ body {
     right: 8px;
     width: 21px;
     height: 21px;
-    background-image: url("icons/chevron-right.svg");
+    background-image: url("chevron-down.svg");
     background-repeat: no-repeat;
     background-position: center right;
 }
@@ -1128,8 +1152,7 @@ body {
 }
 
 input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button
-{
+input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -1640,13 +1663,14 @@ shadow-xl {
 }
 
 
-.slider{
+.slider {
     height: 5px;
     position: relative;
     background: #EEF2F6;
     border-radius: 5px;
 }
-.slider .progress{
+
+.slider .progress {
     height: 100%;
     left: 4%;
     right: 43.3%;
@@ -1662,7 +1686,7 @@ shadow-xl {
     left: -2px;
 }
 
-.range-input input{
+.range-input input {
     position: absolute;
     width: 100%;
     height: 5px;
@@ -1671,16 +1695,18 @@ shadow-xl {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
-input[type="range"]::-webkit-slider-thumb{
+
+input[type="range"]::-webkit-slider-thumb {
     height: 14px;
     width: 14px;
     border-radius: 50%;
     background: #0F172A;
     pointer-events: auto;
     -webkit-appearance: none;
-    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
-input[type="range"]::-moz-range-thumb{
+
+input[type="range"]::-moz-range-thumb {
     height: 14px;
     width: 14px;
     border: none;
@@ -1688,7 +1714,7 @@ input[type="range"]::-moz-range-thumb{
     background: #0F172A;
     pointer-events: auto;
     -moz-appearance: none;
-    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
 #min-price, #max-price {
@@ -1712,6 +1738,99 @@ input[type="range"]::-moz-range-thumb{
 
 #max-price {
     right: 37.3333%;
+}
+
+.filter-select.pagination-items {
+    position: relative;
+    height: 54px;
+}
+
+.filter-select.pagination-items select {
+    display: none; /*hide original SELECT element:*/
+}
+
+.filter-select.pagination-items .select-selected {
+    background-color: white;
+    color: #64748B;
+    border-radius: 8px;
+    font-size: 16px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    min-width: 130px;
+    border: 1px solid #ECEFF4;
+}
+
+.filter-select.pagination-items .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 16px;
+    width: 21px;
+    height: 21px;
+    background-image: url("chevron-down.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.filter-select.pagination-items .select-selected.select-arrow-active:after {
+    transform: rotate(180deg);
+}
+
+.filter-select.pagination-items .select-items div, .select-selected {
+    color: #64748B;
+    padding: 0 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-select.pagination-items .select-items div {
+    color: #64748B;
+    padding: 8px 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-select.pagination-items .select-items {
+    padding-top: 0;
+    background-color: white;
+    color: #64748B;
+    font-size: 16px;
+    border: 1px solid #ECEFF4;
+}
+
+.filter-select.pagination-items .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.pagination-link {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #64748B;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    border-radius: 8px;
+    border: 1px solid #ECEFF4;
+    transition: all 0.2s;
+}
+
+.pagination-link.current{
+    color: #0F172A;
+}
+
+.pagination-link:hover {
+    color: white;
+    background-color: #64748B;
+    cursor: pointer;
+}
+
+.pagination-link:hover img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(200%) contrast(106%);
 }
 
 @media only screen and (max-width: 768px) {
