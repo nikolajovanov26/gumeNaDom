@@ -23,6 +23,7 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 </head>
 
@@ -43,10 +44,23 @@
     </div>
 </div>
 
-
-
-<div id="search" class="flex align-center justify-center">
-    <div class="container-lg flex align-start justify-ends col-gap-22 pt-30 pb-90">
+<div id="search" class="flex flex-col align-center justify-center">
+    <div class="container-lg flex align-start justify-end col-gap-12 mt-30 mb-5">
+        <div class="search-icons">
+            <img src="icons/x.svg" height="16">
+        </div>
+        <div class="search-icons">
+            <img src="icons/layout-list.svg" height="16">
+        </div>
+        <div class="search-icons">
+            <img src="icons/layout-grid.svg" height="16">
+        </div>
+        <div class="product-grid-trigger">
+            Razvrsti Novo
+            <img src="icons/sort-descending.svg" height="16">
+        </div>
+    </div>
+    <div class="container-lg flex align-start justify-between col-gap-22 pb-90">
         <form id="search-filter" action="" method="" class="no-shrink w-1-5">
             <div class="flex flex-col row-gap-30">
                 <div class="flex flex-col row-gap-15">
@@ -103,7 +117,6 @@
                     <div class="flex flex-col row-gap-8 w-full">
                         <div class="flex col-gap-8 align-center">
                             <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Sezone</span>
-                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
                         </div>
 
                         <label class="flex align-center pv-8">
@@ -132,7 +145,6 @@
                     <div class="flex flex-col row-gap-8 w-full">
                         <div class="flex col-gap-8 align-center">
                             <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Vrsta</span>
-                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
                         </div>
 
                         <label class="flex align-center pv-8">
@@ -171,7 +183,6 @@
                     <div class="flex flex-col row-gap-8 w-full">
                         <div class="flex col-gap-8 align-center">
                             <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Znamka</span>
-                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
                         </div>
 
                         <label class="flex align-center pv-8">
@@ -210,7 +221,6 @@
                     <div class="flex flex-col row-gap-8 w-full">
                         <div class="flex col-gap-8 align-center">
                             <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Ostalo</span>
-                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
                         </div>
 
                         <label class="flex align-center pv-8">
@@ -226,7 +236,33 @@
 
                     </div>
                 </div>
-                <div>CENA</div>
+                <div>
+                    <div class="flex col-gap-8 align-center mb-24">
+                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Cenovni razpon</span>
+                    </div>
+                    <div class="relative">
+                        <div class="relative" style="height: 36px; margin-bottom: 13px;">
+                            <div id="min-price">
+                                48
+                            </div>
+
+                            <div id="max-price">
+                                850
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="slider">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="range-input">
+                                <input type="range" class="range-min" min="0" max="1500" value="48" step="1">
+                                <input type="range" class="range-max" min="0" max="1500" value="850" step="1">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
             <button type="submit" class="mt-30 uppercase bg-yellow-400 col-gap-8 radius-8 flex font-bold text-16 align-center justify-center border-0 w-full shadow-xl h-56px">
@@ -250,7 +286,7 @@
                         Top ponudba
                     </div>
                 </div>
-                <div class="flex justify-ends w-full">
+                <div class="flex justify-between w-full">
                     <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                         <div class="flex flex-col align-start">
                             <img src="logo/pirelli.svg" class="prelli logo" height="30px">
@@ -298,7 +334,7 @@
                             </button>
                         </div>
                         <div class="horizontal-separator"></div>
-                        <div class="flex justify-ends align-center">
+                        <div class="flex justify-between align-center">
                             <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
                             <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
                         </div>
@@ -321,7 +357,7 @@
                         Top ponudba
                     </div>
                 </div>
-                <div class="flex justify-ends w-full">
+                <div class="flex justify-between w-full">
                     <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                         <div class="flex flex-col align-start">
                             <img src="logo/pirelli.svg" class="prelli logo" height="30px">
@@ -369,7 +405,7 @@
                             </button>
                         </div>
                         <div class="horizontal-separator"></div>
-                        <div class="flex justify-ends align-center">
+                        <div class="flex justify-between align-center">
                             <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
                             <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
                         </div>
@@ -392,7 +428,7 @@
                         Top ponudba
                     </div>
                 </div>
-                <div class="flex justify-ends w-full">
+                <div class="flex justify-between w-full">
                     <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                         <div class="flex flex-col align-start">
                             <img src="logo/pirelli.svg" class="prelli logo" height="30px">
@@ -440,7 +476,7 @@
                             </button>
                         </div>
                         <div class="horizontal-separator"></div>
-                        <div class="flex justify-ends align-center">
+                        <div class="flex justify-between align-center">
                             <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
                             <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
                         </div>
@@ -463,7 +499,7 @@
                         Top ponudba
                     </div>
                 </div>
-                <div class="flex justify-ends w-full">
+                <div class="flex justify-between w-full">
                     <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                         <div class="flex flex-col align-start">
                             <img src="logo/pirelli.svg" class="prelli logo" height="30px">
@@ -511,7 +547,7 @@
                             </button>
                         </div>
                         <div class="horizontal-separator"></div>
-                        <div class="flex justify-ends align-center">
+                        <div class="flex justify-between align-center">
                             <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
                             <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
                         </div>
@@ -534,7 +570,7 @@
                         Top ponudba
                     </div>
                 </div>
-                <div class="flex justify-ends w-full">
+                <div class="flex justify-between w-full">
                     <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                         <div class="flex flex-col align-start">
                             <img src="logo/pirelli.svg" class="prelli logo" height="30px">
@@ -582,7 +618,7 @@
                             </button>
                         </div>
                         <div class="horizontal-separator"></div>
-                        <div class="flex justify-ends align-center">
+                        <div class="flex justify-between align-center">
                             <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
                             <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
                         </div>
@@ -605,7 +641,7 @@
                         Top ponudba
                     </div>
                 </div>
-                <div class="flex justify-ends w-full">
+                <div class="flex justify-between w-full">
                     <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                         <div class="flex flex-col align-start">
                             <img src="logo/pirelli.svg" class="prelli logo" height="30px">
@@ -653,7 +689,7 @@
                             </button>
                         </div>
                         <div class="horizontal-separator"></div>
-                        <div class="flex justify-ends align-center">
+                        <div class="flex justify-between align-center">
                             <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
                             <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
                         </div>
@@ -676,7 +712,7 @@
                         Top ponudba
                     </div>
                 </div>
-                <div class="flex justify-ends w-full">
+                <div class="flex justify-between w-full">
                     <div class="flex pl-56 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                         <div class="flex flex-col align-start">
                             <img src="logo/pirelli.svg" class="prelli logo" height="30px">
@@ -724,7 +760,7 @@
                             </button>
                         </div>
                         <div class="horizontal-separator"></div>
-                        <div class="flex justify-ends align-center">
+                        <div class="flex justify-between align-center">
                             <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
                             <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
                         </div>
@@ -741,7 +777,7 @@
 
 
 
-<div id="newsletter" class="bg-yellow-400 flex align-center justify-ends"></div>
+<div id="newsletter" class="bg-yellow-400 flex align-center justify-between"></div>
 <div id="blog" class="flex align-center justify-center"></div>
 <div id="footer" class="bg-black text-white flex align-center justify-center"></div>
 

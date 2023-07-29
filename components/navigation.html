@@ -1,5 +1,5 @@
 <div class="absolute screen-m-position-static bg-black w-full flex flex-col relative justify-center align-center text-white">
-    <div id="top-bar" class="screen-m-display-none container-xl flex relative justify-ends align-center">
+    <div id="top-bar" class="screen-m-display-none container-xl flex relative justify-between align-center">
         <div class="flex col-gap-18 align-center">
             <div class="flex col-gap-10">
                 <img src="../icons/headphones.svg" alt="headphones icon" class="h-18px">
@@ -27,12 +27,12 @@
         </div>
     </div>
     <div id="menu" class="bg-gray-800 w-full flex relative justify-center align-center">
-        <div class="container-xl flex relative justify-ends align-center">
+        <div class="container-xl flex relative justify-between align-center">
             <div class="flex align-center col-gap-24">
-                <img id="logo" src="../logo/gumenadom-logo-white.svg" alt="gumenadom logo" class="h-32px">
+                <a href="/"><img id="logo" src="../logo/gumenadom-logo-white.svg" alt="gumenadom logo" class="h-32px"></a>
                 <div class="screen-m-display-none flex col-gap-32 align-center">
-                    <a class="menu-links" href="#">Home</a>
-                    <a class="menu-links" href="#">Izaberi Gume</a>
+                    <a class="menu-links" href="/">Home</a>
+                    <a class="menu-links" href="/search.html">Izaberi Gume</a>
                     <a class="menu-links" href="#">Dodatne Stortive <img src="../icons/arrow-down.svg" alt="arrow down icon"> </a>
                     <a class="menu-links" href="#">Pomoc Uporabnikov <img src="../icons/arrow-down.svg" alt="arrow down icon"> </a>
                 </div>
@@ -51,7 +51,7 @@
                         </a>
                     </div>
                     <div>
-                        <form method="" action="" class="form-search">
+                        <form method="get" action="/search.html" class="form-search">
                             <input name="search" type="search" placeholder="Unesi zahtjev..." />
                             <button type="submit">Traži</button>
                         </form>

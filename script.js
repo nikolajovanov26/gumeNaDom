@@ -18,7 +18,7 @@ for (i = 0; i < l; i++) {
         create a new DIV that will act as an option item:*/
         c = document.createElement("DIV");
         c.innerHTML = selElmnt.options[j].innerHTML;
-        c.addEventListener("click", function(e) {
+        c.addEventListener("click", function (e) {
             /*when an item is clicked, update the original select box,
             and the selected item:*/
             var y, i, k, s, h, sl, yl;
@@ -43,7 +43,7 @@ for (i = 0; i < l; i++) {
         b.appendChild(c);
     }
     x[i].appendChild(b);
-    a.addEventListener("click", function(e) {
+    a.addEventListener("click", function (e) {
         /*when the select box is clicked, close any other select boxes,
         and open/close the current select box:*/
         e.stopPropagation();
@@ -52,6 +52,7 @@ for (i = 0; i < l; i++) {
         this.classList.toggle("select-arrow-active");
     });
 }
+
 function closeAllSelect(elmnt) {
     /*a function that will close all select boxes in the document,
     except the current select box:*/
@@ -73,6 +74,7 @@ function closeAllSelect(elmnt) {
         }
     }
 }
+
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
@@ -103,3 +105,47 @@ document.querySelectorAll('.quantity').forEach(quantity => {
     });
 
 })
+
+rangeInput = document.querySelectorAll(".range-input input")
+range = document.querySelector(".slider .progress");
+min = document.querySelector('#min-price')
+max = document.querySelector('#max-price')
+priceGap = 1;
+rangeInput.forEach(input => {
+    input.addEventListener("input", e => {
+        let minVal = parseInt(rangeInput[0].value),
+            maxVal = parseInt(rangeInput[1].value);
+
+        if (minVal < maxVal) {
+            min.innerHTML = minVal
+            max.innerHTML = maxVal
+        } else {
+            if (e.target.className === "range-min") {
+                min.innerHTML = maxVal
+
+            } else {
+                max.innerHTML = minVal
+
+            }
+        }
+
+        if ((maxVal - minVal) < priceGap) {
+            if (e.target.className === "range-min") {
+                rangeInput[0].value = maxVal - priceGap
+            } else {
+                rangeInput[1].value = minVal + priceGap;
+            }
+        } else {
+            range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+            range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+
+            minP = (((minVal / rangeInput[0].max) * 100) - 5);
+            maxP = 94 - (maxVal / rangeInput[1].max) * 100
+
+            if (minP + maxP < 74) {
+                min.style.left = minP + "%";
+                max.style.right = maxP + "%";
+            }
+        }
+    });
+});
