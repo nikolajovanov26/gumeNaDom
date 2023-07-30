@@ -1394,6 +1394,7 @@ body {
 }
 
 #search-filter label:has(input[type="radio"]:checked) .checkmark::after {
+    display: block;
     content: '';
     position: absolute;
     width: 14px;
@@ -2606,6 +2607,24 @@ ul.product-details-ul li:hover::before {
         left: 0;
         translate: 0;
     }
+
+    .container-xl, .container-md, .container-lg {
+        width: 95%;
+        max-width: 1440px;
+    }
+
+    .screen-lg-pl-20 {
+        padding-left: 20px;
+    }
+
+    .screen-lg-align-stretch {
+        align-items: stretch;
+    }
+
+    .screen-lg-pv-10 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -2629,6 +2648,10 @@ ul.product-details-ul li:hover::before {
     .screen-lg-remove-box-center {
         left: 0;
         translate: 0;
+    }
+
+    .screen-lg-flex-col {
+        flex-direction: column;
     }
 }
 
