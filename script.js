@@ -105,3 +105,12 @@ document.querySelectorAll('.quantity').forEach(quantity => {
     });
 
 })
+
+document.querySelectorAll('.product-button').forEach(btn =>  {
+    btn.addEventListener('click', function() { event.preventDefault();})
+})
+
+document.querySelectorAll('.product-button.compare').forEach(btn =>  {
+    btn.addEventListener('click', function() { location.href = '/compare.html'})
+})
+
