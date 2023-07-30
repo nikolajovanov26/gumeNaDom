@@ -1261,7 +1261,8 @@ body {
 }
 
 .filter-switch .slider.round {
-    border-radius: 1000px;
+    border-radius: 50%;
+    height: 100%;
 }
 
 .filter-switch .slider.round:before {
