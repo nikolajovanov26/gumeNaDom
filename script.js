@@ -114,3 +114,15 @@ document.querySelectorAll('.product-button.compare').forEach(btn =>  {
     btn.addEventListener('click', function() { location.href = '/compare.html'})
 })
 
+
+
+loadMore = document.querySelector('.load-more');
+if (loadMore) {
+    loadMore.addEventListener('click', function () {
+        document.querySelectorAll('.show-more-mobile').forEach(card => card.classList.remove('show-more-mobile'))
+        loadMore.style.display = 'none'
+    })
+}
+
+
+
