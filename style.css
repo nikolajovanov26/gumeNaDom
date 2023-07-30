@@ -2384,13 +2384,13 @@ ul.product-details-ul li:hover::before {
 }
 
 #checkout label:has(input[type="radio"]:checked) .checkmark::after {
+    display: block;
     content: '';
     position: absolute;
-    width: 8px;
-    height: 8px;
-    background-color: #FFFFFF;
+    width: 14px;
+    height: 14px;
+    background-color: black;
     border-radius: 50%;
-    border: 6px solid #000000;
 }
 
 .checkout-checkbox {
@@ -2607,8 +2607,13 @@ ul.product-details-ul li:hover::before {
         translate: 0;
     }
 
-    .container-xl, .container-md, .container-lg {
+    .container-xl, .container-lg {
         width: 95%;
+        max-width: 1440px;
+    }
+
+    .container-md {
+        width: 85%;
         max-width: 1440px;
     }
 
