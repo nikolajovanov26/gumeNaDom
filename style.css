@@ -360,6 +360,10 @@ body {
     width: 80%;
 }
 
+.w-42-5perc {
+    width: 42.5%;
+}
+
 .w-36px {
     width: 36px;
 }
@@ -1454,6 +1458,10 @@ input[type=number]::-webkit-outer-spin-button {
     box-shadow: 0px 0px 4px #D9DEE940;
 }
 
+.shadow-m2 {
+    box-shadow: 0px 4px 4px #D9DEE940;
+}
+
 shadow-xl {
     box-shadow: 4px 4px 35px #A4A3BD4D;
 }
@@ -1607,6 +1615,10 @@ shadow-xl {
     font-weight: 600;
     color: #0F172A;
     padding-left: 10px;
+}
+
+.top-offer-tag.yellow-only {
+    background-image: url("icons/only-yellow-block.svg");
 }
 
 .best-offer-tag {
@@ -2817,6 +2829,11 @@ ul.product-details-ul li:hover::before {
         padding-bottom: 58px;
     }
 
+    .screen-m-pv-70 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
     .screen-m-ph-26 {
         padding-right: 26px;
         padding-left: 26px;
@@ -2826,13 +2843,20 @@ ul.product-details-ul li:hover::before {
         margin-bottom: 12px;
     }
 
+    .screen-m-mb-17 {
+        margin-bottom: 17px;
+    }
+
+    .screen-m-mb-24 {
+        margin-bottom: 24px;
+    }
 
     .screen-m-bg-gray-400 {
         background-color: #EEF2F6;
     }
 
-    .screen-m-max-w-77vw {
-        max-width: 77vw;
+    .screen-m-max-w-73vw {
+        max-width: 73vw;
     }
 
     .screen-m-flex-row-gap-20 {
@@ -2911,6 +2935,11 @@ ul.product-details-ul li:hover::before {
         padding-bottom: 27px;
     }
 
+    .screen-m-pv-34 {
+        padding-top: 34px;
+        padding-bottom: 34px;
+    }
+
     .screen-m-ph-5 {
         padding-left: 5px;
         padding-right: 5px;
@@ -2954,8 +2983,16 @@ ul.product-details-ul li:hover::before {
         max-width: 85vw;
     }
 
+    .screen-m-max-w-87vw {
+        max-width: 87vw;
+    }
+
     .screen-m-col-gap-10 {
         column-gap: 10px;
+    }
+
+    .screen-m-col-gap-6 {
+        column-gap: 6px;
     }
 
     .screen-m-border-gray-100 {
@@ -3091,7 +3128,7 @@ ul.product-details-ul li:hover::before {
     }
 
     .newsletter-p {
-        margin-top: 12px;
+        margin-top: 13px;
         text-align: center;
         font-size: 12px;
         max-width: 270px;
@@ -3131,7 +3168,7 @@ ul.product-details-ul li:hover::before {
 
     .footer-grid {
         display: grid;
-        gap: 22px;
+        gap: 10px;
         grid-template-columns: 1fr;
     }
 
@@ -3155,8 +3192,16 @@ ul.product-details-ul li:hover::before {
         opacity: 0.25;
     }
 
+    .screen-m-mt-85 {
+        margin-top: 85px;
+    }
+
     .screen-m-mt-36 {
         margin-top: 36px;
+    }
+
+    .screen-m-mt-10 {
+        margin-top: 10px;
     }
 
     .footer-link {
@@ -3165,5 +3210,17 @@ ul.product-details-ul li:hover::before {
 
     .max-w-95vw {
         max-width: 95vw;
+    }
+
+    .max-w-92vw {
+        max-width: 92vw;
+    }
+
+    .top-offer-tag {
+        font-size: 13px;
+        line-height: 30px;
+        font-weight: 600;
+        width: 110px;
+        height: 35px;
     }
 }
