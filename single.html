@@ -28,8 +28,12 @@
 
 <body>
 <div id="navigation" class="bg-black"></div>
-<div id="product" class="flex flex-col align-center align-start mb-94">
-    <div class="container-lg flex align-start">
+
+<div id="product" class="flex relative flex-col align-center align-start mb-94 screen-m-mb-17">
+    <div id="prod-bg" class="absolute bg-gray-800 w-full" style="height: 286px; top:0">
+
+    </div>
+    <div class="container-lg screen-m-flex-col flex align-start">
         <div class="flex screen-lg-flex-col-reverse">
             <div>
                 <div class="flex flex-col screen-lg-flex-row  row-gap-16 mb-28 gallery-grid">
@@ -46,7 +50,7 @@
                         <img src="images/products/gallery-photo-2.png">
                     </div>
                 </div>
-                <div class="flex col-gap-4">
+                <div class="flex col-gap-4 display-none">
                     <a class="product-button compare">
                         <img src="icons/compare-black.svg" alt="compare icon" class="h-21px">
                     </a>
@@ -55,18 +59,26 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-27 ml-27 mr-19 relative">
-                <img src="icons/sun-season.svg" width="52px" class="product-season">
+            <div class=" mt-27 ml-27 mr-19 relative">
+                <div class="display-none screen-m-display-block absolute flex col-gap-4">
+                    <a class="product-button compare mb-5">
+                        <img src="icons/compare-black.svg" alt="compare icon" class="h-21px">
+                    </a>
+                    <div class="product-button">
+                        <img src="icons/heart-black.svg" alt="heart icon" class="h-21px">
+                    </div>
+                </div>
+                <img src="icons/sun-season.svg" width="52px" class="product-season screen-m-display-none">
                 <img src="images/products/gallery-photo-3.png" width="626px">
             </div>
         </div>
         <div class="flex align-start screen-lg-flex-col screen-lg-w-full">
             <div class="w-400px no-shrink screen-lg-w-full">
                 <img src="logo/hankog.svg" height="30">
-                <h1 class="m-0 mt-3 mb-5 text-gray-900 text-34 family-outfit l-height-1-2 letter-spacing-n-0-33">MICHELIN
+                <h1 class="m-0 mt-3 mb-5 text-gray-900 text-34 screen-m-text-21  family-outfit l-height-1-2 letter-spacing-n-0-33">MICHELIN
                     205/55R16 91V PRIMACY 4+ DOT0222</h1>
-                <span class="text-gray-700 text-14 letter-spacing-n-0-33 l-height-1-2 ">GOODYEAR 205/55 R16 91H UltraGrip 9+</span>
-                <div class="flex flex-col mb-33 mt-15 row-gap-8 w-full">
+                <span class="text-gray-700 text-14 letter-spacing-n-0-33 l-height-1-2 screen-m-mt-10">GOODYEAR 205/55 R16 91H UltraGrip 9+</span>
+                <div class="flex flex-col mb-33 mt-15 row-gap-8 w-full screen-m-display-none">
                     <div class="flex col-gap-8 align-center">
                         <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 screen-m-text-12 l-height-1-7">Širina</span>
                         <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
@@ -81,19 +93,19 @@
                         </select>
                     </div>
                 </div>
-                <div class="flex flex-col mb-17">
+                <div class="flex flex-col mb-17 screen-m-display-none">
                     <span class="font-semi-bold mb-2 text-32 text-gray-900 letter-spacing-n-0-22 l-height-22px">25.49€</span>
                     <span class=" text-gray-500 letter-spacing-n-0-22 family-outfit text-12 l-height-22px"><span
                             class="text-pink-400">*</span>cena s popustom za plačilo preko UPN</span>
                 </div>
-                <div class="flex align-start mb-22">
+                <div class="flex align-start mb-22  screen-m-display-none">
                 <span class="ml-9 text-12 text-gray-500 letter-spacing-n-0-22 l-height-22px"><span
                         class="font-semi-bold text-gray-900 text-14">6x 15.83€ / m</span> v obrokih s</span>
                     <img class="ml-8" src="logo/leanpay.svg" height="20">
                     <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
                 </div>
-                <div class="horizontal-separator mb-31"></div>
-                <div class="performance-info">
+                <div class="horizontal-separator mb-31 screen-m-display-none"></div>
+                <div class="performance-info screen-m-mt-36">
                     <div class="flex align-center border-b-1 border-gray-100 h-48px">
                         <img src="icons/sound-max.svg" class="mr-6">
                         Zvocni razred
@@ -152,7 +164,19 @@
                     </div>
                 </div>
             </div>
-            <div class="quantity-product no-shrink ">
+            <div class="quantity-product no-shrink screen-m-mt-36">
+                <div class="flex flex-col mb-17 display-none screen-m-display-flex">
+                    <span class="font-semi-bold mb-2 text-32 text-gray-900 letter-spacing-n-0-22 l-height-22px">25.49€</span>
+                    <span class=" text-gray-500 letter-spacing-n-0-22 family-outfit text-12 l-height-22px"><span
+                            class="text-pink-400">*</span>cena s popustom za plačilo preko UPN</span>
+                </div>
+                <div class="flex align-start mb-22 display-none screen-m-display-flex">
+                <span class="ml-9 text-12 text-gray-500 letter-spacing-n-0-22 l-height-22px"><span
+                        class="font-semi-bold text-gray-900 text-14">6x 15.83€ / m</span> v obrokih s</span>
+                    <img class="ml-8" src="logo/leanpay.svg" height="20">
+                    <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                </div>
+                <div class="display-none screen-m-display-block horizontal-separator mb-28 mt-27"></div>
                 <label class="quantity-selector-product">
                     Izberite količino
                     <div class="quantity flex">
@@ -176,11 +200,23 @@
                     <img src="icons/shopping-cart.svg" alt="cart-icon" width="18">
                     Dodaj u korpu
                 </button>
+
+                <div class="display-none screen-m-display-block order-overview-div mt-25 mb-10">
+                    <div class="flex align-center justify-between mb-10 h-40px">
+                        <span class="text-gray-900 text-16 font-semi-bold l-height-20px">Obročno plačilo</span>
+                        <label class="checkout-switch dark">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="horizontal-separator mb-10"></div>
+                    <p class="text-gray-500 text-12">Obrok že od <span class="text-gray-900 font-medium">06x15.83€</span> za 1 gum</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div id="product-info" class="flex flex-col align-center align-start">
+<div id="product-info" class="display-none screen-m-display-none flex flex-col align-center align-start">
     <div class="container-lg flex flex-col">
         <div class="flex col-gap-16 pointer" style="margin-bottom: 2px">
             <span class="product-tab active">Podrobnosti</span>
@@ -215,7 +251,26 @@
         </div>
     </div>
 </div>
-<div id="product-slider" class="flex flex-col align-center align-start mb-83">
+
+<div id="product-info-mobile" class="display-none screen-m-display-flex flex flex-col align-center align-start">
+    <div class="screen-m-pv-22 screen-m-ph-26 mb-28">
+        <h2 class="screen-m-display-none text-gray-900 l-height-22px screen-lg-l-height-1 text-48 letter-spacing-n-0-22 font-semi-bold mb-40">Michelin Primacy MXV4</h2>
+        <h3 class="screen-m-display-none text-21 text-gray-900 letter-spacing-n-0-22 l-height-1-3 font-semi-bold mb-40">Reliable traction with long wear and a quiet ride</h3>
+        <p class="mb-28 text-gray-500 text-18 letter-spacing-n-0-22 l-height-1-5">The Michelin Primacy MXV4 Tires will bring the right combination of performance and luxury to a variety of vehicle types. As the newest generation of our popular line of MXV4 tires, the Primacy MXV4 helps deliver the performance and handling you would expect. </p>
+        <h4 class=" mb-16">Karakteristike</h4>
+        <ul class="product-details-ul">
+            <li>Michelin Primacy MXV4</li>
+            <li>Balancing All-Season Traction and Ride Quality</li>
+            <li>Balancing All-Season Traction and Ride Quality</li>
+            <li>MaxTouch Construction</li>
+            <li>Comfort Control Technology</li>
+            <li>Comfort Control Technology</li>
+            <li>Comfort Control Technology</li>
+        </ul>
+    </div>
+</div>
+
+<div id="product-slider" class="screen-m-display-none flex flex-col align-center align-start mb-83">
     <div class="container-lg pt-60 pb-60 mt-76">
         <h2 class="m-0 mb-60 text-gray-900 text-26 font-semi-bold mb-76">Preporučeno za vas</h2>
         <div class="showcase-grid w-full product-slider">

@@ -2388,6 +2388,10 @@ ul.product-details-ul li:hover::before {
     border-right: 1px solid #ECEFF4;
 }
 
+#prod-bg {
+    display: none;
+}
+
 .checkout-data {
     border-radius: 12px;
     border: 1px solid #ECEFF4;
@@ -2426,10 +2430,11 @@ ul.product-details-ul li:hover::before {
     display: block;
     content: '';
     position: absolute;
-    width: 14px;
-    height: 14px;
-    background-color: black;
+    width: 6px;
+    height: 6px;
+    background-color: white;
     border-radius: 50%;
+    border: 7px solid black;
 }
 
 .checkout-checkbox {
@@ -2773,11 +2778,11 @@ ul.product-details-ul li:hover::before {
     }
 
     .screen-m-display-block {
-        display: block;
+        display: block!important;
     }
 
     .screen-m-display-flex {
-        display: flex;
+        display: flex!important;
     }
 
     .screen-m-w-full {
@@ -3281,5 +3286,32 @@ ul.product-details-ul li:hover::before {
         width: 118px;
         height: 42px;
         font-size: 16px;
+    }
+
+    #product  {
+        margin-top: 0px;
+        padding-top: 56px;
+    }
+
+    #prod-bg {
+        display: block;
+    }
+
+    .gallery-grid {
+        margin-top: 15px;
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(20vw), 1fr));
+        grid-gap: 10px;
+    }
+
+    .product-gallery-image {
+        width: auto;
+    }
+
+    .quantity-product {
+        margin-left: -5%;
+        width: 104%;
+        padding: 40px 20px!important;
     }
 }
