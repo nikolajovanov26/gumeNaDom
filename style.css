@@ -2519,7 +2519,7 @@ ul.product-details-ul li:hover::before {
 
 .checkout-grid {
     display: grid;
-    grid-template-columns: 1fr 0.5fr 1.5fr;
+    grid-template-columns: 0.7fr 0.3fr 2fr;
     grid-template-rows: 21px 21px 21px 48px;
     grid-row-gap: 12px;
 }
@@ -2601,7 +2601,7 @@ ul.product-details-ul li:hover::before {
 }
 
 
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1280px) {
     #top-bar {
         background-size: cover;
     }
@@ -2849,6 +2849,10 @@ ul.product-details-ul li:hover::before {
 
     .screen-m-mb-24 {
         margin-bottom: 24px;
+    }
+
+    .screen-m-mb-30 {
+        margin-bottom: 30px;
     }
 
     .screen-m-bg-gray-400 {
@@ -3222,5 +3226,10 @@ ul.product-details-ul li:hover::before {
         font-weight: 600;
         width: 110px;
         height: 35px;
+    }
+
+    #checkout {
+        padding-top: 0px;
+        margin-top: 24px;
     }
 }
