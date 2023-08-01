@@ -85,6 +85,11 @@ body {
     background-color: #F5F5FA80;
 }
 
+.bg-gray-100 {
+    background-color: #F8FAFC;
+}
+
+
 .bg-yellow-500 {
     background-color: #E6C100;
 }
@@ -504,6 +509,9 @@ body {
     height: 56px;
 }
 
+.h-62px {
+    height: 62px;
+}
 
 .h-125px {
     height: 125px;
@@ -570,6 +578,10 @@ body {
 .pv-93 {
     padding-top: 93px;
     padding-bottom: 93px;
+}
+
+.pl-16 {
+    padding-left: 16px;
 }
 
 .pl-42 {
@@ -683,6 +695,11 @@ body {
 .mr-8 {
     margin-right: 8px;
 }
+
+.mr-16 {
+    margin-right: 16px;
+}
+
 
 .mr-19 {
     margin-right: 19px;
@@ -1120,7 +1137,7 @@ body {
 }
 
 .form-filter {
-    width: 470px;
+    min-width: 470px;
     background-color: #FFFFFF;
     border-radius: 26px;
     padding: 36px 23px;
@@ -1576,6 +1593,18 @@ shadow-xl {
     transition: all 0.2s;
 }
 
+.gray-input-text {
+    padding-left: 16px;
+    background-color: #EEF2F6;
+    color: #64748B;
+    border-radius: 8px;
+    font-size: 14px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border: 0;
+}
+
 .hero-cta:hover {
     background-color: #1A1A1A;
 }
@@ -1716,7 +1745,16 @@ shadow-xl {
     height: 94px;
 }
 
+.advance-filter {
+    padding-left: 12px;
+    margin-left: 12px;
+    border-left: 1px solid #ECEFF4;
+}
+
+
 .add-to-cart-button {
+    text-decoration: none;
+    color: black;
     width: 150px;
     height: 44px;
     background-color: #FFD601;

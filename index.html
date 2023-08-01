@@ -29,172 +29,262 @@
 <div id="navigation" class="bg-black"></div>
 <div id="hero" class="flex flex-col align-center bg-black">
     <div class="container-lg screen-m-w-full flex screen-m-display-block">
-        <form action="/search.html" class="flex flex-col form-filter row-gap-15 mr-50 screen-m-margin-0 screen-m-w-full max-w-95vw">
-            <div class="flex justify-between align-center">
-                <span class="block text-16 family-urbanist font-bold letter-spacing-0-4 text-gray-900">Tipovi Guma</span>
-                <span class="block text-14 family-urbanist font-medium letter-spacing-0-5 text-gray-500">More Options</span>
-            </div>
-            <div>
+        <form action="/search.html" class="flex mr-50 form-filter">
+            <div class="relative flex flex-col row-gap-15 screen-m-margin-0 screen-m-w-full max-w-95vw">
+                <div class="flex justify-between align-center">
+                    <span class="block text-16 family-urbanist font-bold letter-spacing-0-4 text-gray-900">Tipovi Guma</span>
+                    <span class="block text-14 family-urbanist font-medium letter-spacing-0-5 text-gray-500">More Options</span>
+                </div>
+                <div>
+                    <div class="flex col-gap-10">
+                        <label class="inline image-radio-label relative">
+                            <div class="image-radio">
+                                <img src="icons/pnevmatike.jpg" alt="pnevmatike" class="w-40px h-40px">
+                                <span class="block font-bold text-13 screen-m-text-11 letter-spacing-0-5">Pnevmatike</span>
+                            </div>
+                            <input type="radio" name="tip" checked>
+                            <span class="radiomark"></span>
+                        </label>
+                        <label class="inline image-radio-label relative">
+                            <div class="image-radio">
+                                <img src="icons/moto.png" alt="moto" class="w-40px h-40px">
+                                <span class="block font-bold text-13 letter-spacing-0-5">Moto</span>
+                            </div>
+                            <input type="radio" name="tip">
+                            <span class="radiomark"></span>
+                        </label>
+                        <label class="inline image-radio-label relative">
+                            <div class="image-radio">
+                                <img src="icons/platisca.png" alt="platisca" class="w-40px h-40px">
+                                <span class="block font-bold text-13 letter-spacing-0-5">Platišča</span>
+                            </div>
+                            <input type="radio" name="tip">
+                            <span class="radiomark"></span>
+                        </label>
+                        <label class="inline image-radio-label relative">
+                            <div class="image-radio">
+                                <img src="icons/verige.png" alt="verige" class="w-40px h-40px">
+                                <span class="block font-bold text-13 letter-spacing-0-5">Verige</span>
+                            </div>
+                            <input type="radio" name="tip">
+                            <span class="radiomark"></span>
+                        </label>
+                    </div>
+                </div>
                 <div class="flex col-gap-10">
-                    <label class="inline image-radio-label relative">
-                        <div class="image-radio">
-                            <img src="icons/pnevmatike.jpg" alt="pnevmatike" class="w-40px h-40px">
-                            <span class="block font-bold text-13 screen-m-text-11 letter-spacing-0-5">Pnevmatike</span>
+                    <div class="flex flex-col row-gap-8 w-full">
+                        <div class="flex col-gap-8 align-center">
+                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 screen-m-text-12 l-height-1-7">Širina</span>
+                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
                         </div>
-                        <input type="radio" name="tip" checked>
-                        <span class="radiomark"></span>
-                    </label>
-                    <label class="inline image-radio-label relative">
-                        <div class="image-radio">
-                            <img src="icons/moto.png" alt="moto" class="w-40px h-40px">
-                            <span class="block font-bold text-13 letter-spacing-0-5">Moto</span>
+
+                        <div class="filter-select">
+                            <select>
+                                <option value="195">195</option>
+                                <option value="195">195</option>
+                                <option value="200">200</option>
+                                <option value="210">210</option>
+                            </select>
                         </div>
-                        <input type="radio" name="tip">
-                        <span class="radiomark"></span>
-                    </label>
-                    <label class="inline image-radio-label relative">
-                        <div class="image-radio">
-                            <img src="icons/platisca.png" alt="platisca" class="w-40px h-40px">
-                            <span class="block font-bold text-13 letter-spacing-0-5">Platišča</span>
+                    </div>
+
+                    <div class="flex flex-col row-gap-8 w-full">
+                        <div class="flex col-gap-8 align-center">
+                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Visina</span>
+                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
                         </div>
-                        <input type="radio" name="tip">
-                        <span class="radiomark"></span>
-                    </label>
-                    <label class="inline image-radio-label relative">
-                        <div class="image-radio">
-                            <img src="icons/verige.png" alt="verige" class="w-40px h-40px">
-                            <span class="block font-bold text-13 letter-spacing-0-5">Verige</span>
+
+                        <div class="filter-select">
+                            <select>
+                                <option value="55">55</option>
+                                <option value="55">55</option>
+                                <option value="60">60</option>
+                                <option value="65">65</option>
+                            </select>
                         </div>
-                        <input type="radio" name="tip">
-                        <span class="radiomark"></span>
+                    </div>
+
+                    <div class="flex flex-col row-gap-8 w-full">
+                        <div class="flex col-gap-8 align-center">
+                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Presek</span>
+                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                        </div>
+
+                        <div class="filter-select">
+                            <select>
+                                <option value="R14">R14</option>
+                                <option value="R14">R14</option>
+                                <option value="R16">R16</option>
+                                <option value="R18">R18</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/rb-tyre-size-diagram.png" class="h-125px">
+                </div>
+                <div class="flex col-gap-10">
+                    <div class="flex flex-col row-gap-8 w-full">
+                        <div class="flex col-gap-8 align-center">
+                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Znamka</span>
+                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                        </div>
+
+                        <div class="filter-select">
+                            <select>
+                                <option value="VSE">VSE</option>
+                                <option value="VSE">VSE</option>
+                                <option value="VSE">VSE</option>
+                                <option value="VSE">VSE</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col row-gap-8 w-full">
+                        <div class="flex col-gap-8 align-center">
+                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Sezone</span>
+                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                        </div>
+
+                        <div class="filter-select">
+                            <select>
+                                <option value="Ljeto">Ljeto</option>
+                                <option value="Ljeto">Ljeto</option>
+                                <option value="Ljeto">Ljeto</option>
+                                <option value="Ljeto">Ljeto</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col row-gap-8 w-full">
+                        <div class="flex col-gap-8 align-center">
+                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Vrsta vozila</span>
+                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                        </div>
+
+                        <div class="filter-select">
+                            <select>
+                                <option value="Putnicko">Putnicko</option>
+                                <option value="Putnicko">Putnicko</option>
+                                <option value="Putnicko">Putnicko</option>
+                                <option value="Putnicko">Putnicko</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="horizontal-separator"></div>
+                <div class="bg-gray-400 radius-8 flex align-center justify-between p-12">
+                    <div class="flex align-center col-gap-12">
+                        <div class="flex radius-8 justify-center align-center h-36px w-36px bg-white">
+                            <img src="icons/steering-line.svg" alt="steering line icon" class="h-18px">
+                        </div>
+                        <span class="font-bold text-gray-900 text-16">Išči po vin številki</span>
+                    </div>
+
+                    <label class="filter-switch">
+                        <input data-advanced-toggle type="checkbox">
+                        <span class="slider round"></span>
                     </label>
+                </div>
+                <div>
+                    <button type="submit" class="bg-yellow-500 flex align-center justify-center border-0 w-full">
+                        Išči
+                        <img src="icons/search.svg" alt="search icon" class="h-21px">
+                    </button>
                 </div>
             </div>
-            <div class="flex col-gap-10">
-                <div class="flex flex-col row-gap-8 w-full">
-                    <div class="flex col-gap-8 align-center">
-                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 screen-m-text-12 l-height-1-7">Širina</span>
-                        <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
-                    </div>
 
-                    <div class="filter-select">
-                        <select>
-                            <option value="195">195</option>
-                            <option value="195">195</option>
-                            <option value="200">200</option>
-                            <option value="210">210</option>
-                        </select>
-                    </div>
+            <div class="bg-white advance-filter display-none">
+                <span class="block text-16 family-urbanist font-bold letter-spacing-0-4 text-gray-900">Iskalnik pnevmatik po številki šasije / VIN številki</span>
+                <div class="flex justify-center mb-28">
+                    <img src="images/advanced-search-image.png" class=" w-300px">
                 </div>
-
-                <div class="flex flex-col row-gap-8 w-full">
-                    <div class="flex col-gap-8 align-center">
-                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Visina</span>
-                        <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
-                    </div>
-
-                    <div class="filter-select">
-                        <select>
-                            <option value="55">55</option>
-                            <option value="55">55</option>
-                            <option value="60">60</option>
-                            <option value="65">65</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="flex flex-col row-gap-8 w-full">
-                    <div class="flex col-gap-8 align-center">
-                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Presek</span>
-                        <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
-                    </div>
-
-                    <div class="filter-select">
-                        <select>
-                            <option value="R14">R14</option>
-                            <option value="R14">R14</option>
-                            <option value="R16">R16</option>
-                            <option value="R18">R18</option>
-                        </select>
-                    </div>
-                </div>
-
-            </div>
-            <div class="flex justify-center">
-                <img src="images/rb-tyre-size-diagram.png" class="h-125px">
-            </div>
-            <div class="flex col-gap-10">
-                <div class="flex flex-col row-gap-8 w-full">
-                    <div class="flex col-gap-8 align-center">
+                <label class="flex flex-col mb-16">
+                    <div class="flex mb-8">
                         <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Znamka</span>
                         <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
                     </div>
 
-                    <div class="filter-select">
-                        <select>
-                            <option value="VSE">VSE</option>
-                            <option value="VSE">VSE</option>
-                            <option value="VSE">VSE</option>
-                            <option value="VSE">VSE</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="flex flex-col row-gap-8 w-full">
-                    <div class="flex col-gap-8 align-center">
-                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Sezone</span>
-                        <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
-                    </div>
-
-                    <div class="filter-select">
-                        <select>
-                            <option value="Ljeto">Ljeto</option>
-                            <option value="Ljeto">Ljeto</option>
-                            <option value="Ljeto">Ljeto</option>
-                            <option value="Ljeto">Ljeto</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="flex flex-col row-gap-8 w-full">
-                    <div class="flex col-gap-8 align-center">
-                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Vrsta vozila</span>
-                        <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
-                    </div>
-
-                    <div class="filter-select">
-                        <select>
-                            <option value="Putnicko">Putnicko</option>
-                            <option value="Putnicko">Putnicko</option>
-                            <option value="Putnicko">Putnicko</option>
-                            <option value="Putnicko">Putnicko</option>
-                        </select>
-                    </div>
-                </div>
-
-            </div>
-            <div class="horizontal-separator"></div>
-            <div class="bg-gray-400 radius-8 flex align-center justify-between p-12">
-                <div class="flex align-center col-gap-12">
-                    <div class="flex radius-8 justify-center align-center h-36px w-36px bg-white">
-                        <img src="icons/steering-line.svg" alt="steering line icon" class="h-18px">
-                    </div>
-                    <span class="font-bold text-gray-900 text-16">Išči po vin številki</span>
-                </div>
-
-                <label class="filter-switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
+                    <input type="text" class="gray-input-text" name="vin" placeholder="VDD ... .. .... .... ....">
                 </label>
-            </div>
-            <div>
-                <button type="submit" class="bg-yellow-500 flex align-center justify-center border-0 w-full">
-                    Išči
-                    <img src="icons/search.svg" alt="search icon" class="h-21px">
-                </button>
+                <div class="horizontal-separator"></div>
+                <span class="block mt-15 text-16 family-urbanist font-bold letter-spacing-0-4 text-gray-900">Iskalnik pnevmatik po modelu vozila</span>
+                <div class="mt-15 w-full border-gray-100 border-1 h-62px radius-8 flex align-center pl-16">
+                    <div class="flex align-center justify-center bg-gray-100 mr-16" style="width: 44px; height: 44px">
+                        <img src="logo/audi.svg">
+                    </div>
+                    <span class="font-bold text-14 text-gray-900">Audi</span>
+                </div>
+                <div class="mt-15">
+                    <div class="flex col-gap-10">
+                        <div class="flex flex-col row-gap-8 w-full">
+                            <div class="flex col-gap-8 align-center">
+                                <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Model</span>
+                            </div>
+
+                            <div class="filter-select">
+                                <select>
+                                    <option value="A6">A6</option>
+                                    <option value="A3">A3</option>
+                                    <option value="A4">A4</option>
+                                    <option value="A5">A5</option>
+                                    <option value="A6">A6</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col row-gap-8 w-full">
+                            <div class="flex col-gap-8 align-center">
+                                <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Leto izdelave</span>
+                            </div>
+
+                            <div class="filter-select">
+                                <select>
+                                    <option value="2015">2015</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col row-gap-8 w-full">
+                            <div class="flex col-gap-8 align-center">
+                                <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Generacija</span>
+                            </div>
+
+                            <div class="filter-select">
+                                <select>
+                                    <option value="5">5</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div class="mt-15">
+                        <button type="submit" class="align-center bg-yellow-500 flex align-center justify-center border-0 w-full">
+                            <span>Išči</span>
+                            <img src="icons/search.svg" alt="search icon" class="h-21px">
+                        </button>
+                    </div>
+
+                </div>
             </div>
         </form>
-        <div class="screen-m-display-none mt-47 max-w-340px flex flex-col row-gap-36">
+        <div data-hero-offer class="screen-m-display-none mt-47 max-w-340px flex flex-col row-gap-36">
             <span class="uppercase family-jost font-medium text-15 letter-spacing-1-5" style="margin-bottom: -20px">sezonsko snizenje do</span>
             <div class="bold-horizontal-separator"></div>
             <span class="text-143 font-semi-bold family-jost l-height-1 max-h-92px l-height-92px">50%</span>
@@ -699,10 +789,10 @@
                                     <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-10"><span class="text-pink-400">*</span>cena s popustom za plačilo preko UPN</span>
                                 </div>
                             </div>
-                            <button class="add-to-cart-button">
+                            <a href="search.html" class="add-to-cart-button">
                                 Dodaj u korpu
                                 <img src="icons/shopping-cart.svg" alt="cart-icon" width="18">
-                            </button>
+                            </a>
                         </div>
 
                     </div>
@@ -1141,6 +1231,7 @@
 <script src="blog.js"></script>
 <script src="navigation.js"></script>
 <script src="footer.js"></script>
+<script src="advanced-search.js"></script>
 </body>
 
 </html>
