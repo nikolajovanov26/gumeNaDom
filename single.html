@@ -30,7 +30,7 @@
 <div id="navigation" class="bg-black"></div>
 
 <div id="product" class="flex relative flex-col align-center align-start mb-94 screen-m-mb-17">
-    <div id="prod-bg" class="absolute bg-gray-800 w-full" style="height: 286px; top:0">
+    <div id="prod-bg" class="display-none screen-m-display-block absolute bg-gray-800 w-full" style="height: 286px; top:0">
 
     </div>
     <div class="container-lg screen-m-flex-col flex align-start">
@@ -180,7 +180,7 @@
                 <label class="quantity-selector-product">
                     Izberite količino
                     <div class="quantity flex">
-                        <input type="number" min="0" max="100" value="0" class="quantityInput">
+                        <input type="number" min="1" max="100" value="1" class="quantityInput">
                         <div class="number-buttons">
                             <img class="incrementBtn pointer block" src="icons/increment.svg" width="9px">
                             <img class="decrementBtn pointer block" src="icons/decrement.svg" width="9px">
@@ -189,17 +189,17 @@
                 </label>
                 <div class="border-b-1 border-gray-100 pb-12 flex justify-between mb-12">
                     <span class="text-gray-500 text-14">Michelin Primacy 4+ DOT</span>
-                    <span class="text-gray-900 text-14 font-semi-bold">x4</span>
-                    <span class="text-16 text-gray-900 font-semi-bold">97.96€</span>
+                    <span data-quantity class="text-gray-900 text-14 font-semi-bold">x4</span>
+                    <span data-product-price class="text-16 text-gray-900 font-semi-bold">97.96€</span>
                 </div>
                 <div class="flex justify-between mb-32">
                     <span class="text-gray-900 text-16 font-semi-bold l-height-24px">Total</span>
-                    <span class="text-21 font-semi-bold">116.99€</span>
+                    <span data-total-price class="text-21 font-semi-bold">116.99€</span>
                 </div>
-                <button class="add-to-cart-button w-full" style="width: 100%; height: 53px">
+                <a href="checkout.html" class="no-decoration text-black add-to-cart-button w-full" style="width: 100%; height: 53px">
                     <img src="icons/shopping-cart.svg" alt="cart-icon" width="18">
                     Dodaj u korpu
-                </button>
+                </a>
 
                 <div class="display-none screen-m-display-block order-overview-div mt-25 mb-10">
                     <div class="flex align-center justify-between mb-10 h-40px">
@@ -388,7 +388,7 @@
 <script src="blog.js"></script>
 <script src="newsletter.js"></script>
 <script src="footer.js"></script>
-<script src="gallery.js"></script>
+<script src="single.js"></script>
 </body>
 
 </html>
