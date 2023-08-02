@@ -29,11 +29,11 @@
 <div id="navigation" class="bg-black"></div>
 <div id="hero" class="flex flex-col align-center bg-black">
     <div class="container-lg screen-m-w-full flex screen-m-display-block">
-        <form action="/search.html" class="flex mr-50 form-filter">
+        <form action="/search.html" class="flex mr-50 form-filter screen-m-margin-0">
             <div class="relative flex flex-col row-gap-15 screen-m-margin-0 screen-m-w-full max-w-95vw">
                 <div class="flex justify-between align-center">
                     <span class="block text-16 family-urbanist font-bold letter-spacing-0-4 text-gray-900">Tipovi Guma</span>
-                    <span class="block text-14 family-urbanist font-medium letter-spacing-0-5 text-gray-500">More Options</span>
+                    <span data-advanced-button class="block text-14 family-urbanist font-medium letter-spacing-0-5 text-gray-500 pointer">More Options</span>
                 </div>
                 <div>
                     <div class="flex col-gap-10">
@@ -197,7 +197,10 @@
             </div>
 
             <div class="bg-white advance-filter display-none">
-                <span class="block text-16 family-urbanist font-bold letter-spacing-0-4 text-gray-900">Iskalnik pnevmatik po številki šasije / VIN številki</span>
+                <div class="flex align-center col-gap-12">
+                    <img data-advanced-back src="icons/arrow_back.svg" class="display-none screen-m-display-block">
+                    <span class="block text-16 family-urbanist font-bold letter-spacing-0-4 text-gray-900">Iskalnik pnevmatik po številki šasije / VIN številki</span>
+                </div>
                 <div class="flex justify-center mb-28">
                     <img src="images/advanced-search-image.png" class=" w-300px">
                 </div>
@@ -211,7 +214,7 @@
                 </label>
                 <div class="horizontal-separator"></div>
                 <span class="block mt-15 text-16 family-urbanist font-bold letter-spacing-0-4 text-gray-900">Iskalnik pnevmatik po modelu vozila</span>
-                <div class="mt-15 w-full border-gray-100 border-1 h-62px radius-8 flex align-center pl-16">
+                <div class="mt-15 border-gray-100 border-1 h-62px radius-8 flex align-center pl-16">
                     <div class="flex align-center justify-center bg-gray-100 mr-16" style="width: 44px; height: 44px">
                         <img src="logo/audi.svg">
                     </div>
@@ -293,22 +296,22 @@
         </div>
     </div>
 </div>
-<div id="icon-box" class="screen-m-bg-gray-400 flex flex-col align-center border-b-1 border-gray-100">
+<div id="icon-box" class="screen-m-bg-gray-400 flex flex-col align-center border-b-1 border-gray-100 ">
     <div class="container-lg flex icon-box-grid h-208px screen-m-height-auto">
-        <div class="flex screen-m-flex-col-reverse screen-m-padding-0 justify-between align-center w-full pr-56">
-            <span class="text-gray-900 max-w-250px screen-m-text-14">100% varen nakup plačanje<br> online</span>
+        <div class="flex screen-m-flex-col-reverse screen-m-padding-0 justify-between align-center w-full pr-56  screen-lg-flex-col-reverse screen-lg-justify-center screen-lg-row-gap-10">
+            <span class="text-gray-900 max-w-250px screen-m-text-14 screen-lg-text-center">100% varen nakup plačanje<br> online</span>
             <img src="icons/secure-payment.svg" alt="secure payment icon" class="ml-10 screen-m-h-40px" width="80px">
         </div>
-        <div class="flex screen-m-flex-col-reverse screen-m-padding-0 justify-between align-center w-full pr-56 pl-56 border-l-1 border-gray-100">
-            <span class="text-gray-900 max-w-250px text-gray-900 max-w-250px screen-m-text-14">Hitra in učinkovita <br> dostava</span>
+        <div class="flex screen-m-flex-col-reverse screen-m-padding-0 justify-between align-center w-full pr-56 pl-56 border-l-1 border-gray-100  screen-lg-flex-col-reverse screen-lg-justify-center screen-lg-row-gap-10">
+            <span class="text-gray-900 max-w-250px text-gray-900 max-w-250px screen-m-text-14 screen-lg-text-center">Hitra in učinkovita <br> dostava</span>
             <img src="icons/delivery-express.svg" alt="express delivery icon" class="ml-10  screen-m-h-40px" width="93px">
         </div>
-        <div class="flex screen-m-flex-col-reverse screen-m-padding-0 justify-between align-center w-full pr-56 pl-56 border-l-1 border-gray-100">
-            <span class="text-gray-900 max-w-250px text-gray-900 max-w-250px screen-m-text-14">Možnost dodatne garancije <br>za 1 leto</span>
+        <div class="flex screen-m-flex-col-reverse screen-m-padding-0 justify-between align-center w-full pr-56 pl-56 border-l-1 border-gray-100  screen-lg-flex-col-reverse screen-lg-justify-center screen-lg-row-gap-10">
+            <span class="text-gray-900 max-w-250px text-gray-900 max-w-250px screen-m-text-14 screen-lg-text-center">Možnost dodatne garancije <br>za 1 leto</span>
             <img src="icons/guarantee.svg" alt="guarantee icon" class="ml-10  screen-m-h-40px" width="75px">
         </div>
-        <div class="flex screen-m-flex-col-reverse screen-m-padding-0 justify-between align-center w-full pl-56 border-l-1 border-gray-100">
-            <span class="text-gray-900 max-w-250px text-gray-900 max-w-250px screen-m-text-14">Možnost plačila na<br> obroke</span>
+        <div class="flex screen-m-flex-col-reverse screen-m-padding-0 justify-between align-center w-full pl-56 border-l-1 border-gray-100 screen-lg-flex-col-reverse screen-lg-justify-center screen-lg-row-gap-10">
+            <span class="text-gray-900 max-w-250px text-gray-900 max-w-250px screen-m-text-14 screen-lg-text-center">Možnost plačila na<br> obroke</span>
             <img src="icons/credit-card.svg" alt="creadit card icon" class="ml-10  screen-m-h-40px" width="80px">
         </div>
     </div>
@@ -732,14 +735,14 @@
         </div>
     </div>
 </div>
-<div id="summer-offer" class="no-overflow relative pb-143 screen-m-pb-64px">
+<div id="summer-offer" class="no-overflow relative pb-7-4vw screen-m-pb-64px">
     <div class="absolute w-full">
         <img src="images/summer-offer.jpg" alt="summer offer" class="screen-m-display-none w-full">
         <img src="images/mobile-summer-offer.png" alt="summer offer" class="display-none screen-m-display-flex w-full">
         <img src="icons/original.svg" alt="original" class="absolute screen-m-display-none" style="top: 19.5%;right: 3.8%;width: 18.8%;">
     </div>
     <div class="flex flex-col align-center justify-center relative">
-        <div class="container-lg text-white pt-143 screen-m-pt-45px pb-143 screen-m-pb-20px screen-m-display-flex justify-center">
+        <div class="container-lg text-white pt-143 screen-m-pt-45px pb-7-4vw screen-m-pb-20px screen-m-display-flex justify-center">
             <h2 class="text-74 font-bold l-height-1-2 w-976px m-0 screen-m-text-26 screen-m-w-4-5 screen-m-text-center screen-m-font-semi-bold">Naša ponudba letnih gum za vsa vozila</h2>
             <p class="screen-m-display-none w-670px m-0 mt-40 text-24 l-height-1-3">Izberite pnevmatike preverjene kakovosti in države porekla, po
                 najboljši ceni z vedno brezplačno hitro dostavo!</p>
@@ -789,10 +792,10 @@
                                     <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-10"><span class="text-pink-400">*</span>cena s popustom za plačilo preko UPN</span>
                                 </div>
                             </div>
-                            <a href="search.html" class="add-to-cart-button">
+                            <button class="add-to-cart-button">
                                 Dodaj u korpu
                                 <img src="icons/shopping-cart.svg" alt="cart-icon" width="18">
-                            </a>
+                            </button>
                         </div>
 
                     </div>
@@ -1208,13 +1211,13 @@
     </div>
 </div>
 <div id="newsletter" class="bg-yellow-400 flex align-center justify-end">
-    <div class="w-42-5perc screen-m-w-full" >
+    <div class="half-div screen-m-w-full" >
         <div class="max-w-627 screen-m-w-full screen-m-ph-26 screen-m-pv-58 screen-m-max-w-92vw">
-            <h2 class="screen-m-text-center m-0 font-bold text-36 screen-m-text-32 screen-m-mb-24">Prijava na e-novice</h2>
-            <p class="newsletter-sh m-0 font-medium text-21 screen-m-text-14 l-height-1-3">Bodite na tekočem z zadnjimi novicami iz sveta avtomobilizma, koristnimi nasveti za voznike in Avtostopovimi akcijami samo za naročnike.</p>
+            <h2 class="screen-m-text-center m-0 font-bold text-36 screen-m-text-32 screen-m-mb-24 screen-lg-text-24">Prijava na e-novice</h2>
+            <p class="newsletter-sh m-0 font-medium text-21 screen-m-text-14 l-height-1-3 screen-lg-text-18">Bodite na tekočem z zadnjimi novicami iz sveta avtomobilizma, koristnimi nasveti za voznike in Avtostopovimi akcijami samo za naročnike.</p>
             <form class="form-newsletter flex col-gap-12 screen-m-col-gap-6 screen-m-justify-between" method="" action="">
-                <input type="email" name="email" placeholder="You email address">
-                <button type="submit">
+                <input type="email" name="email" placeholder="You email address" class="w-full no-max-w screen-lg-no-max-w">
+                <button type="submit" class="w-full no-max-w screen-lg-no-max-w">
                     Subscribe
                     <img src="icons/subscribe-icon.svg" alt="subscribe icon" width="24">
                 </button>
