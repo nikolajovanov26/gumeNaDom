@@ -2512,7 +2512,7 @@ ul.product-details-ul li:hover::before {
     font-size: 14px;
     line-height: 20px;
     color: #64748B;
-    border: 0;
+    border: 2px solid #EEF2F6;
     height: 44px;
     padding: 0px 15px;
     border-radius: 8px;
