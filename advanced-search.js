@@ -16,10 +16,6 @@ backButton.addEventListener('click', function () {
     let event = new Event('change');
     toggle.dispatchEvent(event);
     document.querySelector('[data-advanced-toggle]').checked = 0
-
-    if (window.outerWidth < 992) {
-        document.querySelector('body').style.overflowY = 'auto'
-    }
 })
 
 toggle.addEventListener('change', function () {

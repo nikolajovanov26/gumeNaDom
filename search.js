@@ -97,3 +97,32 @@ document.querySelectorAll('#pagination .select-items').forEach(selected => {
 
 changePagination()
 
+toggle = document.querySelector('[data-search-toggle]')
+backButton = document.querySelector('[data-advanced-back]')
+closeSearch = document.querySelector('[data-search-close]')
+secondStepToggle = document.querySelector('[data-second-step-toggle]')
+secondStep = document.querySelector('[data-second-step]')
+
+backButton.addEventListener('click', function () {
+    let event = new Event('change');
+    secondStepToggle.dispatchEvent(event);
+    secondStep.classList.add('display-none')
+    secondStepToggle.checked = 0
+})
+
+toggle.addEventListener('change', function () {
+    document.querySelector('.search-mobile').classList.remove('display-none')
+})
+
+closeSearch.addEventListener('click', function () {
+    backButton.click()
+    document.querySelector('.search-mobile').classList.add('display-none')
+
+    toggle.checked = 0
+})
+
+secondStepToggle.addEventListener('change', function () {
+    secondStep.classList.remove('display-none')
+})
+
+

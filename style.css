@@ -3409,6 +3409,10 @@ ul.product-details-ul li:hover::before {
         align-items: center;
     }
 
+    .screen-m-flex-align-initial {
+        align-items: initial;
+    }
+
     .screen-m-flex-text-center {
         text-align: center;
     }
@@ -3570,5 +3574,27 @@ ul.product-details-ul li:hover::before {
         left: 0;
         right: 0;
         background-color: #FFFFFF;
+    }
+
+    .search-mobile {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        justify-content: end;
+        background-color: #0F172A80;
+    }
+
+    .search-mobile-block {
+        background-color: #FFFFFF;
+    }
+
+    .second-step {
+        width: 92%;
+        z-index: 10;
     }
 }
