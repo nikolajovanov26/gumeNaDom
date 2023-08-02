@@ -2687,6 +2687,9 @@ ul.product-details-ul li:hover::before {
     grid-template-columns: repeat(auto-fill, minmax(max(400px, 30%), 1fr));
 }
 
+.mobile-navigation {
+    display: none;
+}
 
 @media only screen and (max-width: 1280px) {
     #top-bar {
@@ -2976,6 +2979,10 @@ ul.product-details-ul li:hover::before {
 
     .screen-m-max-w-80vw {
         max-width: 80vw;
+    }
+
+    .screen-m-max-w-35vw {
+        max-width: 35vw;
     }
 
     .screen-m-flex-row-gap-20 {
@@ -3368,7 +3375,7 @@ ul.product-details-ul li:hover::before {
         background-image: url("images/mobile-banner-wheel.png"), url("images/mobile-banner-bg.svg") !important;
         background-position: 95% 85%, bottom left;
         background-color: #141518;
-        background-size: 190px, 90vw;
+        background-size: 160px, contain;
         padding-top: 27px;
     }
 
@@ -3446,5 +3453,23 @@ ul.product-details-ul li:hover::before {
         width: 87vw;
         max-width: none;
         margin-left: -11vw;
+    }
+
+    #footer {
+        padding-bottom: 81px;
+    }
+
+    .mobile-navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        height: 81px;
+        border-top: 1px solid #EEF2F6;
+        align-items: center;
+        justify-items: center;
     }
 }
