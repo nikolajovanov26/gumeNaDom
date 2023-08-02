@@ -3441,4 +3441,10 @@ ul.product-details-ul li:hover::before {
     .form-filter {
         min-width: 0;
     }
+
+    .order-overview {
+        width: 87vw;
+        max-width: none;
+        margin-left: -11vw;
+    }
 }
