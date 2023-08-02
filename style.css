@@ -3115,7 +3115,7 @@ ul.product-details-ul li:hover::before {
     }
 
     .screen-m-max-w-85vw {
-        max-width: 85vw;
+        max-width: 80vw;
     }
 
     .screen-m-max-w-92vw {
@@ -3172,7 +3172,7 @@ ul.product-details-ul li:hover::before {
     }
 
     .form-filter .image-radio {
-        width: 20vw;
+        width: 18.5vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -3426,13 +3426,19 @@ ul.product-details-ul li:hover::before {
     }
 
     .advance-filter {
-        position: absolute;
-        width: 92vw;
+        bottom: 0;
+        background-color: white;
+        position: fixed;
+        width: 97vw;
         top: 0;
         left: 0;
-        padding-top: 130px;
-        padding-bottom: 4vh;
-        border-bottom: 1px solid  #EEF2F6;
-        padding-right: 3vw;
+        padding-top: 60px;
+        z-index: 20;
+        margin: 0;
+        padding-right: 12px;
+    }
+
+    .form-filter {
+        min-width: 0;
     }
 }
