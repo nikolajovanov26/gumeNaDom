@@ -29,12 +29,15 @@
     <div id="menu" class="bg-gray-800 w-full flex relative justify-center align-center">
         <div class="container-xl flex relative justify-between align-center">
             <div class="flex align-center col-gap-24">
-                <a href="/"><img id="logo" src="../logo/gumenadom-logo-white.svg" alt="gumenadom logo" class="h-32px"></a>
+                <a href="/"><img id="logo" src="../logo/gumenadom-logo-white.svg" alt="gumenadom logo"
+                                 class="h-32px"></a>
                 <div class="screen-m-display-none flex col-gap-32 align-center">
                     <a class="menu-links" href="/">Home</a>
                     <a class="menu-links" href="/search.html">Izaberi Gume</a>
-                    <a class="menu-links" href="#">Dodatne Stortive <img src="../icons/arrow-down.svg" alt="arrow down icon"> </a>
-                    <a class="menu-links" href="#">Pomoc Uporabnikov <img src="../icons/arrow-down.svg" alt="arrow down icon"> </a>
+                    <a class="menu-links" href="#">Dodatne Stortive <img src="../icons/arrow-down.svg"
+                                                                         alt="arrow down icon"> </a>
+                    <a class="menu-links" href="#">Pomoc Uporabnikov <img src="../icons/arrow-down.svg"
+                                                                          alt="arrow down icon"> </a>
                 </div>
             </div>
             <div class="screen-m-display-none flex align-center col-gap-24">
@@ -52,7 +55,7 @@
                     </div>
                     <div>
                         <form method="get" action="/search.html" class="form-search">
-                            <input name="search" type="search" placeholder="Unesi zahtjev..." />
+                            <input name="search" type="search" placeholder="Unesi zahtjev..."/>
                             <button type="submit">Traži</button>
                         </form>
                     </div>
@@ -65,10 +68,10 @@
     </div>
 </div>
 
-<div class="mobile-navigation">
-    <a href="">
+<div class="mobile-navigation ">
+    <div data-mobile-menu-open>
         <img src="../icons/menu-mobile.svg">
-    </a>
+    </div>
     <a href="/search.html">
         <img src="../icons/search-mobile.svg">
     </a>
@@ -81,4 +84,98 @@
     <a href="#">
         <img src="../icons/user-mobile.svg">
     </a>
+</div>
+
+<div class="mobile-menu display-none" data-mobile-menu>
+    <div class="flex mb-22">
+        <img data-mobile-menu-close src="../icons/arrow_back.svg" width="24">
+        <div class="w-full text-center family-urbanist text-18 font-bold">Navigation</div>
+    </div>
+    <span class="font-bold text-14 text-gray-300 family-urbanist mb-8">Brzi linkovi</span>
+    <a href="/search.html" class="flex no-decoration align-center justify-between family-urbanist pv-8 font-semi-bold family-poppins text-gray-900 text-14">
+        Izberi Gume
+        <img src="../icons/chevron-right.svg" width="20">
+    </a>
+    <a class="flex no-decoration align-center justify-between family-urbanist pv-8 font-semi-bold family-poppins text-gray-900 text-14">
+        Dodatne Stortive
+        <img src="../icons/chevron-right.svg" width="20">
+    </a>
+    <a class="flex no-decoration align-center justify-between family-urbanist pv-8 font-semi-bold family-poppins text-gray-900 text-14">
+        Pomoc Uporabnikov
+        <img src="../icons/chevron-right.svg" width="20">
+    </a>
+
+    <div class="flex align-center justify-between pv-8">
+        <div class="flex align-center">
+            <div class="w-40px h-40px bg-gray-100 mr-16 flex align-center justify-center">
+                <img src="../icons/moon.svg">
+            </div>
+            <span class="flex no-decoration align-center justify-between family-urbanist pv-8 font-semi-bold family-poppins text-gray-900 text-14">
+            Dark Mode
+        </span>
+        </div>
+        <label class="menu-switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <span class="font-bold text-14 text-gray-300 family-urbanist mb-24 mt-22">Account Settings</span>
+    <div class="flex align-center justify-between pv-8">
+        <div class="flex align-center">
+            <div class="w-40px h-40px bg-gray-100 mr-16 flex align-center justify-center">
+                <img src="../icons/user.svg">
+            </div>
+            <span class="flex align-center justify-between family-urbanist font-semi-bold family-poppins text-gray-900 text-14">
+            Account information
+        </span>
+        </div>
+        <img src="../icons/chevron-right.svg" width="20">
+    </div>
+    <div class="flex align-center justify-between pv-8">
+        <div class="flex align-center">
+            <div class="w-40px h-40px bg-gray-100 mr-16 flex align-center justify-center">
+                <img src="../icons/card.svg">
+            </div>
+            <span class="flex no-decoration align-center justify-between family-urbanist pv-8 font-semi-bold family-poppins text-gray-900 text-14">
+            Payment method
+        </span>
+        </div>
+        <img src="../icons/chevron-right.svg" width="20">
+    </div>
+    <div class="flex align-center justify-between pv-8">
+        <div class="flex align-center">
+            <div class="w-40px h-40px bg-gray-100 mr-16 flex align-center justify-center">
+                <img src="../icons/link.svg">
+            </div>
+            <span class="flex no-decoration align-center justify-between family-urbanist pv-8 font-semi-bold family-poppins text-gray-900 text-14">
+            Link Account
+        </span>
+        </div>
+        <img src="../icons/chevron-right.svg" width="20">
+    </div>
+    <div class="flex align-center justify-between pv-8">
+        <div class="flex align-center">
+            <div class="w-40px h-40px bg-gray-100 mr-16 flex align-center justify-center">
+                <img src="../icons/moon.svg">
+            </div>
+            <span class="flex no-decoration align-center justify-between family-urbanist pv-8 font-semi-bold family-poppins text-gray-900 text-14">
+            Dark Mode
+        </span>
+        </div>
+        <label class="menu-switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="flex align-center justify-between pv-8">
+        <div class="flex align-center">
+            <div class="w-40px h-40px bg-red-200 mr-16 flex align-center justify-center">
+                <img src="../icons/logout.svg">
+            </div>
+            <span class="flex align-center text-red-400 justify-between family-urbanist pv-8 font-semi-bold family-poppins text-14">
+                Sign out
+            </span>
+        </div>
+        <img src="../icons/chevron-right.svg" width="20">
+    </div>
 </div>
