@@ -30,3 +30,29 @@ quantityInput.addEventListener('change', function () {
     quantity.innerHTML = 'x' + quantityInput.value
     totalPrice.innerHTML = parseFloat(parseFloat(productPrice.innerText) * parseFloat(quantityInput.value)).toFixed(2)+ '€';
 })
+
+tabs = document.querySelectorAll('[data-tab]')
+
+
+tabContent = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', function (item) {
+        tabContent.forEach(content => {
+            if (content === document.querySelector("[data-tab-content='" + tab.dataset.tab + "']")) {
+                content.classList.remove('display-none')
+            } else {
+                content.classList.add('display-none')
+            }
+        })
+
+        tabs.forEach(tb => {
+            if (tb === tab) {
+                tb.classList.add('active')
+            } else {
+                tb.classList.remove('active')
+            }
+        })
+    });
+    console.log()
+})
