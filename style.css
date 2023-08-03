@@ -3122,8 +3122,8 @@ ul.product-details-ul li:hover::before {
         background-color: #EEF2F6;
     }
 
-    .screen-m-max-w-80vw {
-        max-width: 80vw;
+    .screen-m-max-w-74vw {
+        max-width: 74vw;
     }
 
     .screen-m-max-w-35vw {
@@ -3391,6 +3391,7 @@ ul.product-details-ul li:hover::before {
         height: 56px;
         margin-top: 36px;
         background-color: #E7D819;
+        color: black;
         text-transform: uppercase;
         border-radius: 8px;
         border: 0;
@@ -3454,6 +3455,10 @@ ul.product-details-ul li:hover::before {
         margin-top: 12px;
         display: flex;
         overflow-x: scroll;
+    }
+
+    .w-90perc {
+        width: 90%;
     }
 
     .footer-grid {
