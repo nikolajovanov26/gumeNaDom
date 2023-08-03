@@ -125,4 +125,25 @@ secondStepToggle.addEventListener('change', function () {
     secondStep.classList.remove('display-none')
 })
 
+orderBtn = document.querySelector('[data-change-order]')
+orderBtn.addEventListener('click', function () {
+    orderBtn.classList.toggle('active')
 
+    const parentDiv = document.querySelector('[data-collection]');
+
+    parentDiv.style.opacity = 0.5;
+
+    setTimeout(() => {
+        const fragment = document.createDocumentFragment();
+
+        while (parentDiv.lastElementChild) {
+            fragment.appendChild(parentDiv.lastElementChild);
+        }
+
+        parentDiv.appendChild(fragment);
+
+        parentDiv.style.opacity = 1;
+    }, "500");
+
+    changePagination(document.querySelector('#itemNumber').value)
+})
