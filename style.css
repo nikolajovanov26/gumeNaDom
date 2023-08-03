@@ -2803,23 +2803,25 @@ ul.product-details-ul li:hover::before {
     display: none;
 }
 
-.showcase-slider {
+.showcase-slider, .blog-slider {
     display: flex;
     transition: all 0.2s;
     transform: translateX(0px);
 }
 
-.slider-div {
-    width: 30vw;
-    margin-right: 1vw;
+.slider-div, .blog-slider-div {
+    width: 28.5vw;
+    margin-right: 20px;
     flex-shrink: 0;
     min-width: 390px;
+    max-width: 530px;
 }
 
+
 @media only screen and (max-width: 1280px) {
-    .slider-div {
-        width: 45vw;
-        margin-right: 2vw;
+    .slider-div, .blog-slider-div {
+        width: 46vw;
+        margin-right: 20px;
         flex-shrink: 0;
     }
 
@@ -2986,8 +2988,9 @@ ul.product-details-ul li:hover::before {
 }
 
 @media only screen and (max-width: 991px) {
-    .slider-div {
+    .slider-div, .blog-slider-div {
         width: 95vw;
+        min-width: 95vw;
         margin-right: 2vw;
         flex-shrink: 0;
     }

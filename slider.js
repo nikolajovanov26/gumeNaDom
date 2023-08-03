@@ -5,6 +5,8 @@ width = document.querySelector('[data-slider-content]').offsetWidth;
 slide = 0;
 sliderDivs = sliderPanel.children
 
+console.log(sliderPanel)
+
 arrowLeft.addEventListener('click', function () {
     if (slide === 0) {
         sliderPanel.style.transition = 'all 0s'
@@ -47,45 +49,50 @@ arrowRight.addEventListener('click', function () {
 
 arrowLeft2 = document.querySelector('[data-slider-left-2]');
 arrowRight2 = document.querySelector('[data-slider-right-2]');
-sliderPanel2 = document.querySelector('[data-slider-panel-2]');
-width2 = document.querySelector('[data-slider-content-2]').offsetWidth;
-slide2 = 0;
-sliderDivs2 = sliderPanel2.children
 
-arrowLeft2.addEventListener('click', function () {
-    if (slide2 === 0) {
-        sliderPanel2.style.transition = 'all 0s'
-        lastElement2 = sliderDivs2[sliderDivs2.length - 1];
-        sliderPanel2.style.translate = -1 * width + 'px'
-        sliderPanel2.prepend(lastElement2)
 
-        setTimeout(() => {
-            sliderPanel2.style.transition = 'all 0.2s'
-            sliderPanel2.style.translate = '0px'
-        }, "1");
+if (arrowLeft2 !== null) {
 
-    } else {
-        slide2--;
-        sliderPanel2.style.translate = -1 * slide2 * width2+ 'px'
-    }
-})
+    sliderPanel2 = document.querySelector('[data-slider-panel-2]');
+    width2 = document.querySelector('[data-slider-content-2]').offsetWidth;
+    slide2 = 0;
+    sliderDivs2 = sliderPanel2.children
 
-arrowRight2.addEventListener('click', function () {
-    length2 = sliderDivs2.length - 3;
+    arrowLeft2.addEventListener('click', function () {
+        if (slide2 === 0) {
+            sliderPanel2.style.transition = 'all 0s'
+            lastElement2 = sliderDivs2[sliderDivs2.length - 1];
+            sliderPanel2.style.translate = -1 * width + 'px'
+            sliderPanel2.prepend(lastElement2)
 
-    if (slide2 === length2) {
-        sliderPanel2.style.transition = 'all 0s'
-        firstElement2 = sliderDivs2[0];
-        sliderPanel2.style.translate = -1 * (length2 - 1) * width2 + 'px'
-        sliderPanel2.append(firstElement2)
+            setTimeout(() => {
+                sliderPanel2.style.transition = 'all 0.2s'
+                sliderPanel2.style.translate = '0px'
+            }, "1");
 
-        setTimeout(() => {
-            sliderPanel2.style.transition = 'all 0.2s'
-            sliderPanel2.style.translate = -1 * length2 * width2 + 'px'
-        }, "1");
+        } else {
+            slide2--;
+            sliderPanel2.style.translate = -1 * slide2 * width2+ 'px'
+        }
+    })
 
-    } else {
-        slide2++;
-        sliderPanel2.style.translate = -1 * slide2 * width2 + 'px'
-    }
-})
+    arrowRight2.addEventListener('click', function () {
+        length2 = sliderDivs2.length - 3;
+
+        if (slide2 === length2) {
+            sliderPanel2.style.transition = 'all 0s'
+            firstElement2 = sliderDivs2[0];
+            sliderPanel2.style.translate = -1 * (length2 - 1) * width2 + 'px'
+            sliderPanel2.append(firstElement2)
+
+            setTimeout(() => {
+                sliderPanel2.style.transition = 'all 0.2s'
+                sliderPanel2.style.translate = -1 * length2 * width2 + 'px'
+            }, "1");
+
+        } else {
+            slide2++;
+            sliderPanel2.style.translate = -1 * slide2 * width2 + 'px'
+        }
+    })
+}
