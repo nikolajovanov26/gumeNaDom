@@ -1555,10 +1555,29 @@ shadow-xl {
     align-items: center;
     justify-content: center;
     column-gap: 8px;
+    position: relative;
 }
 
 .menu-links:hover {
     background-color: #1A1B23;
+}
+
+.navigation-dropdown-div {
+    position: absolute;
+    background: white;
+    bottom: -85px;
+    left: 15px;
+    padding: 19px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    row-gap: 15px;
+}
+
+.navigation-dropdown-div > a{
+    color: #0F172A;
+    display: block;
+    text-decoration: none;
 }
 
 .icon-button {

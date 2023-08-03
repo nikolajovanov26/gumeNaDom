@@ -15,8 +15,23 @@ fetch("components/navigation.html")
             mobileMenu.classList.remove('screen-m-display-flex')
         })
 
+        document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+            dropdown.addEventListener('mouseenter', function (item) {
+                item.target.querySelector('.navigation-dropdown-div').classList.remove('display-none')
+            })
+
+            dropdown.addEventListener('mouseleave', function (item) {
+                item.target.querySelector('.navigation-dropdown-div').classList.add('display-none')
+            })
+        })
+
+        document.addEventListener("mouseenter", function(event) {
+            document.querySelectorAll('.navigation-dropdown-div').forEach(dropdown => {
+                if (!dropdown.contains(event.target) && !dropdown.parentElement.contains(event.target) ) {
+                    dropdown.classList.add('display-none')
+                }
+            })
+        });
+
+
     });
-
-
-
-
