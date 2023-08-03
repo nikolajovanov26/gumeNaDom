@@ -54,5 +54,23 @@ tabs.forEach(tab => {
             }
         })
     });
-    console.log()
+})
+
+mobileTabs = document.querySelectorAll('[data-tab-mobile]')
+
+mobileTabs.forEach(tab => {
+    tab.addEventListener('click', function (item) {
+        mobileTabs.forEach(mbTab => {
+            if (mbTab === tab) {
+                mbTab.parentElement.querySelector('[data-tab-content-mobile]').classList.toggle('display-none')
+            }
+        })
+
+        tab.classList.toggle('bg-gray-300')
+
+        tab.querySelector('img').style.transform =
+            tab.querySelector('img').style.transform === ''
+                ? 'rotateZ(180deg)'
+                : '';
+    })
 })

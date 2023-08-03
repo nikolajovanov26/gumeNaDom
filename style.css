@@ -3366,6 +3366,10 @@ ul.product-details-ul li:hover::before {
         font-family: 'Urbanist', sans-serif;
     }
 
+    .dropdown-closed {
+        transition: all 0.2s;
+    }
+
     .tire-bg {
         background-size: 174px;
     }
