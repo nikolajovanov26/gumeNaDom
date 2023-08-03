@@ -281,7 +281,7 @@
             </div>
 
             <label class="filter-switch">
-                <input data-search-toggle  data-search type="checkbox">
+                <input data-search-toggle data-search type="checkbox">
                 <span class="slider round"></span>
             </label>
 
@@ -289,260 +289,169 @@
                 <div data-search-close style="height: 100%">
                 </div>
                 <div class="search-mobile-block no-shrink">
-                    <form action="/search.html" class="flex mr-50 form-filter screen-m-margin-0">
-                        <div class="relative flex flex-col row-gap-15 screen-m-margin-0 screen-m-w-full max-w-95vw">
-                            <div class="flex justify-between align-center">
-                                <span class="block text-16 family-urbanist font-bold letter-spacing-0-4 text-gray-900">Tipovi Guma</span>
-                                <span data-advanced-button class="block text-14 family-urbanist font-medium letter-spacing-0-5 text-gray-500 pointer">More Options</span>
+                    <form action="" method="" class="form-filter no-shrink">
+                        <div class="flex flex-col row-gap-30">
+                            <div class="flex flex-col row-gap-15">
+                                <div class="flex col-gap-22">
+                                    <div class="flex flex-col row-gap-8 w-full">
+                                        <div class="flex col-gap-8 align-center">
+                                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 screen-m-text-12 l-height-1-7">Širina</span>
+                                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                                        </div>
+
+                                        <div class="filter-select">
+                                            <select class="sirina">
+                                                <option>Izberite</option>
+                                                <option value="195">195</option>
+                                                <option value="200">200</option>
+                                                <option value="210">210</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col row-gap-8 w-full">
+                                        <div class="flex col-gap-8 align-center">
+                                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Visina</span>
+                                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                                        </div>
+
+                                        <div class="filter-select">
+                                            <select name="visina">
+                                                <option>Izberite</option>
+                                                <option value="55">55</option>
+                                                <option value="60">60</option>
+                                                <option value="65">65</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex col-gap-22">
+                                    <div class="flex flex-col row-gap-8 w-full">
+                                        <div class="flex col-gap-8 align-center">
+                                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Presek</span>
+                                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                                        </div>
+
+                                        <div class="filter-select">
+                                            <select name="presek">
+                                                <option>Izberite</option>
+                                                <option value="R14">R14</option>
+                                                <option value="R16">R16</option>
+                                                <option value="R18">R18</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col row-gap-8 w-full">
+                                        <div class="flex col-gap-8 align-center">
+                                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Sezone</span>
+                                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                                        </div>
+
+                                        <div class="filter-select">
+                                            <select name="presek">
+                                                <option>---VSI---</option>
+                                                <option value="vsi">---VSI---</option>
+                                                <option value="letne">Letne</option>
+                                                <option value="zimske">Zimske</option>
+                                                <option value="celoletne">Celoletne</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex col-gap-22">
+                                    <div class="flex flex-col row-gap-8 w-full">
+                                        <div class="flex col-gap-8 align-center">
+                                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Vrsta</span>
+                                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                                        </div>
+
+                                        <div class="filter-select">
+                                            <select name="presek">
+                                                <option>---VSI---</option>
+                                                <option value="vsi">---VSI---</option>
+                                                <option value="avto">Avto gume</option>
+                                                <option value="kamion">Kamion/Kombi</option>
+                                                <option value="suv">SUV</option>
+                                                <option value="moto">MOTO gume</option>
+                                                <option value="tovarne">Tovorne/Kmetijske</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col row-gap-8 w-full">
+                                        <div class="flex col-gap-8 align-center">
+                                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Znamka</span>
+                                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                                        </div>
+
+                                        <div class="filter-select">
+                                            <select name="presek">
+                                                <option>---VSI---</option>
+                                                <option value="vsi">---VSI---</option>
+                                                <option value="alpus">Aplus</option>
+                                                <option value="austone">Austone</option>
+                                                <option value="barum">Barum</option>
+                                                <option value="goodrich">BF Goodrich</option>
+                                                <option value="bridgestone">Bridgestone</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col row-gap-8 w-full">
+                                    <div class="flex col-gap-8 align-center">
+                                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Ostalo</span>
+                                        <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                                    </div>
+
+                                    <div class="filter-select">
+                                        <select name="presek">
+                                            <option>---VSI---</option>
+                                            <option value="vsi">---VSI---</option>
+                                            <option value="rft">Runflat RFT</option>
+                                            <option value="xl">XL</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
                             </div>
+
                             <div>
-                                <div class="flex col-gap-10">
-                                    <label class="inline image-radio-label relative">
-                                        <div class="image-radio">
-                                            <img src="icons/pnevmatike.jpg" alt="pnevmatike" class="w-40px h-40px">
-                                            <span class="block font-bold text-13 screen-m-text-11 letter-spacing-0-5">Pnevmatike</span>
+                                <div class="flex col-gap-8 align-center mb-24">
+                                    <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Cenovni razpon</span>
+                                </div>
+                                <div class="relative">
+                                    <div class="relative" style="height: 36px; margin-bottom: 13px;">
+                                        <div id="min-price-mobile">
+                                            48
                                         </div>
-                                        <input type="radio" name="tip" checked>
-                                        <span class="radiomark"></span>
-                                    </label>
-                                    <label class="inline image-radio-label relative">
-                                        <div class="image-radio">
-                                            <img src="icons/moto.png" alt="moto" class="w-40px h-40px">
-                                            <span class="block font-bold text-13 letter-spacing-0-5">Moto</span>
+
+                                        <div id="max-price-mobile">
+                                            850
                                         </div>
-                                        <input type="radio" name="tip">
-                                        <span class="radiomark"></span>
-                                    </label>
-                                    <label class="inline image-radio-label relative">
-                                        <div class="image-radio">
-                                            <img src="icons/platisca.png" alt="platisca" class="w-40px h-40px">
-                                            <span class="block font-bold text-13 letter-spacing-0-5">Platišča</span>
+                                    </div>
+                                    <div class="relative">
+                                        <div class="slider-mobile">
+                                            <div class="progress-mobile"></div>
                                         </div>
-                                        <input type="radio" name="tip">
-                                        <span class="radiomark"></span>
-                                    </label>
-                                    <label class="inline image-radio-label relative">
-                                        <div class="image-radio">
-                                            <img src="icons/verige.png" alt="verige" class="w-40px h-40px">
-                                            <span class="block font-bold text-13 letter-spacing-0-5">Verige</span>
+                                        <div class="range-input-mobile">
+                                            <input type="range" class="range-min-mobile" min="0" max="1500" value="48" step="1">
+                                            <input type="range" class="range-max-mobile" min="0" max="1500" value="850" step="1">
                                         </div>
-                                        <input type="radio" name="tip">
-                                        <span class="radiomark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="flex col-gap-10">
-                                <div class="flex flex-col row-gap-8 w-full">
-                                    <div class="flex col-gap-8 align-center">
-                                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 screen-m-text-12 l-height-1-7">Širina</span>
-                                        <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
-                                    </div>
-
-                                    <div class="filter-select">
-                                        <select>
-                                            <option>Izberite</option>
-                                            <option value="195">195</option>
-                                            <option value="200">200</option>
-                                            <option value="210">210</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="flex flex-col row-gap-8 w-full">
-                                    <div class="flex col-gap-8 align-center">
-                                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Visina</span>
-                                        <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
-                                    </div>
-
-                                    <div class="filter-select">
-                                        <select>
-                                            <option>Izberite</option>
-                                            <option value="55">55</option>
-                                            <option value="60">60</option>
-                                            <option value="65">65</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="flex flex-col row-gap-8 w-full">
-                                    <div class="flex col-gap-8 align-center">
-                                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Presek</span>
-                                        <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
-                                    </div>
-
-                                    <div class="filter-select">
-                                        <select>
-                                            <option value="R14">R14</option>
-                                            <option value="R14">R14</option>
-                                            <option value="R16">R16</option>
-                                            <option value="R18">R18</option>
-                                        </select>
                                     </div>
                                 </div>
 
                             </div>
-                            <div class="flex justify-center">
-                                <img src="images/rb-tyre-size-diagram.png" class="h-125px">
-                            </div>
-                            <div class="flex col-gap-10">
-                                <div class="flex flex-col row-gap-8 w-full">
-                                    <div class="flex col-gap-8 align-center">
-                                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Znamka</span>
-                                        <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
-                                    </div>
 
-                                    <div class="filter-select">
-                                        <select>
-                                            <option>Izberite</option>
-                                            <option value="VSE">VSE</option>
-                                            <option value="VSE">VSE</option>
-                                            <option value="VSE">VSE</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="flex flex-col row-gap-8 w-full">
-                                    <div class="flex col-gap-8 align-center">
-                                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Sezone</span>
-                                        <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
-                                    </div>
-
-                                    <div class="filter-select">
-                                        <select>
-                                            <option>Izberite</option>
-                                            <option value="Ljeto">Ljeto</option>
-                                            <option value="Ljeto">Ljeto</option>
-                                            <option value="Ljeto">Ljeto</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="flex flex-col row-gap-8 w-full">
-                                    <div class="flex col-gap-8 align-center">
-                                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Vrsta vozila</span>
-                                        <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
-                                    </div>
-
-                                    <div class="filter-select">
-                                        <select>
-                                            <option>Izberite</option>
-                                            <option value="Putnicko">Putnicko</option>
-                                            <option value="Putnicko">Putnicko</option>
-                                            <option value="Putnicko">Putnicko</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="horizontal-separator"></div>
-                            <div class="bg-gray-400 radius-8 flex align-center justify-between p-12">
-                                <div class="flex align-center col-gap-12">
-                                    <div class="flex radius-8 justify-center align-center h-36px w-36px bg-white">
-                                        <img src="icons/steering-line.svg" alt="steering line icon" class="h-18px">
-                                    </div>
-                                    <span class="font-bold text-gray-900 text-16">Išči po vin številki</span>
-                                </div>
-
-                                <label class="filter-switch">
-                                    <input data-second-step-toggle type="checkbox">
-                                    <span class="slider round"></span>
-                                </label>
-                            </div>
-                            <div>
-                                <button type="submit" class="bg-yellow-500 flex align-center justify-center border-0 w-full">
-                                    Išči
-                                    <img src="icons/search.svg" alt="search icon" class="h-21px">
-                                </button>
-                            </div>
                         </div>
 
-                        <div data-second-step class="second-step absolute bg-white display-none">
-                            <div class="flex align-center col-gap-12">
-                                <img data-advanced-back src="icons/arrow_back.svg" class="display-none screen-m-display-block">
-                                <span class="block text-16 family-urbanist font-bold letter-spacing-0-4 text-gray-900">Iskalnik pnevmatik po številki šasije / VIN številki</span>
-                            </div>
-                            <div class="flex justify-center mb-28">
-                                <img src="images/advanced-search-image.png" class=" w-300px">
-                            </div>
-                            <label class="flex flex-col mb-16">
-                                <div class="flex mb-8">
-                                    <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Znamka</span>
-                                    <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
-                                </div>
-
-                                <input type="text" class="gray-input-text" name="vin" placeholder="VDD ... .. .... .... ....">
-                            </label>
-                            <div class="horizontal-separator"></div>
-                            <span class="block mt-15 text-16 family-urbanist font-bold letter-spacing-0-4 text-gray-900">Iskalnik pnevmatik po modelu vozila</span>
-                            <div class="mt-15 border-gray-100 border-1 h-62px radius-8 flex align-center pl-16">
-                                <div class="flex align-center justify-center bg-gray-100 mr-16" style="width: 44px; height: 44px">
-                                    <img src="logo/audi.svg">
-                                </div>
-                                <span class="font-bold text-14 text-gray-900">Audi</span>
-                            </div>
-                            <div class="mt-15">
-                                <div class="flex col-gap-10">
-                                    <div class="flex flex-col row-gap-8 w-full">
-                                        <div class="flex col-gap-8 align-center">
-                                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Model</span>
-                                        </div>
-
-                                        <div class="filter-select">
-                                            <select>
-                                                <option>Izberite</option>
-                                                <option value="A3">A3</option>
-                                                <option value="A4">A4</option>
-                                                <option value="A5">A5</option>
-                                                <option value="A6">A6</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex flex-col row-gap-8 w-full">
-                                        <div class="flex col-gap-8 align-center">
-                                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Leto izdelave</span>
-                                        </div>
-
-                                        <div class="filter-select">
-                                            <select>
-                                                <option>Izberite</option>
-                                                <option value="2015">2015</option>
-                                                <option value="2016">2016</option>
-                                                <option value="2017">2017</option>
-                                                <option value="2018">2018</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex flex-col row-gap-8 w-full">
-                                        <div class="flex col-gap-8 align-center">
-                                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Generacija</span>
-                                        </div>
-
-                                        <div class="filter-select">
-                                            <select>
-                                                <option>Izberite</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="mt-15">
-                                    <button type="submit" class="align-center bg-yellow-500 flex align-center justify-center border-0 w-full">
-                                        <span>Išči</span>
-                                        <img src="icons/search.svg" alt="search icon" class="h-21px">
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
+                        <button type="submit"
+                                class="mt-30 uppercase bg-yellow-400 col-gap-8 radius-8 flex font-bold text-16 align-center justify-center border-0 w-full shadow-xl h-56px">
+                            Išči
+                            <img src="icons/search.svg" alt="search icon" class="h-21px">
+                        </button>
                     </form>
                 </div>
             </div>
@@ -551,7 +460,8 @@
             <div data-collection class="flex flex-col row-gap-30 mb-43 transition-all">
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -568,7 +478,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -596,95 +507,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
-                            <div data-price class="align-center mt-19 screen-m-margin-0">
-                                <div>
-                                    <div data-nm class="mb-12">
-                                        <div class="flex align-bottom col-gap-8 h-21px mr-6">
-                                            <span data-heading class="font-semi-bold text-22">148.86€</span>
-                                            <span class="text-14 text-gray-500 linethrough">156.00<b>€</b></span>
-                                        </div>
-                                        <p data-info
-                                              class="screen-m-display-none text-gray-500 letter-spacing-n-0-22 family-outfit text-12 l-height-1-2"><span
-                                                class="text-pink-400">*</span>cena s popustom za plačilo preko UPN</p>
-                                    </div>
-
-                                </div>
-                                <div class="flex col-gap-12 screen-m-display-none">
-                                    <div data-qty class="flex col-gap-12">
-                                        <div class="quantity flex">
-                                            <input type="number" min="1" max="100" value="1" class="quantityInput">
-                                            <div class="number-buttons">
-                                                <img class="incrementBtn pointer block" src="icons/increment.svg"
-                                                     width="9px">
-                                                <img class="decrementBtn pointer block" src="icons/decrement.svg"
-                                                     width="9px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button data-w class="add-to-cart-button w-full">
-                                        Dodaj u korpu
-                                        <img src="icons/shopping-cart.svg" alt="cart-icon" width="18">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="horizontal-separator screen-m-display-none"></div>
-                            <div class="flex justify-between align-center screen-m-display-none">
-                                <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
-                                <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </a>
-                <a data-col href="single.html"
-                   class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
-                        <div data-photo class="relative">
-                            <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
-                            <div class="product-buttons-div" style="top: 10px; left: 10px">
-                                <div class="product-button">
-                                    <img src="icons/compare-black.svg" alt="compare icon" class="h-21px">
-                                </div>
-                                <div class="product-button">
-                                    <img src="icons/heart-black.svg" alt="heart icon" class="h-21px">
-                                </div>
-                            </div>
-                            <div data-tag class="top-offer-tag yellow-only bottom-left-3 screen-m-bottom-left-15">
-                                Top ponudba
-                            </div>
-                        </div>
-
-                    </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
-                        <div data-np
-                             class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
-                            <div class="flex flex-col align-start">
-                                <img src="logo/pirelli.svg" class="prelli logo" height="30px">
-                                <span data-heading class="font-semi-bold text-21 l-height-1-3 mt-6 max-w-250px">GOODYEAR 205/55 R16 91H UltraGrip 9+</span>
-                                <span data-text class="text-16 l-height-1-2 mt-6 text-gray-500 screen-m-display-none">KUMHO AVTO guma za ZIMSKO sezono , dimenzije: 175/50/R15</span>
-                            </div>
-
-                            <div class="flex align-center col-gap-12 text-16 font-medium mt-6">
-                                <div class="flex align-center col-gap-8">
-                                    <img src="icons/rim-tyre.png" alt="rim tyre icon" height="23px">
-                                    A
-                                </div>
-                                <div class="flex align-center col-gap-8">
-                                    <img src="icons/gas-station-fuel.svg" alt="gas station fuel icon" height="23px">
-                                    B
-                                </div>
-                                <div class="flex align-center col-gap-8">
-                                    <img src="icons/sound-max.svg" alt="sound icon" height="23px">
-                                    72
-                                </div>
-                                <div class="flex align-center col-gap-8">
-                                    <img src="icons/sun.svg" alt="sun icon" height="23px">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -727,7 +551,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -744,7 +569,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -772,7 +598,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -815,7 +642,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -832,7 +660,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -860,7 +689,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -903,7 +733,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -920,7 +751,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -948,7 +780,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -991,7 +824,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -1008,7 +842,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -1036,7 +871,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -1079,7 +915,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -1096,7 +933,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -1124,7 +962,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -1167,7 +1006,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -1184,7 +1024,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -1212,7 +1053,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -1255,7 +1097,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -1272,7 +1115,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -1300,7 +1144,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -1343,7 +1188,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -1360,7 +1206,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -1388,7 +1235,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -1431,7 +1279,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -1448,7 +1297,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -1476,7 +1326,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -1519,7 +1370,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -1536,7 +1388,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -1564,7 +1417,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -1607,7 +1461,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -1624,7 +1479,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -1652,7 +1508,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -1695,7 +1552,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -1712,7 +1570,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -1740,7 +1599,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -1783,7 +1643,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -1800,7 +1661,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -1828,7 +1690,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -1871,7 +1734,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -1888,7 +1752,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -1916,7 +1781,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -1959,7 +1825,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -1976,7 +1843,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -2004,7 +1872,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -2047,7 +1916,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -2064,7 +1934,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -2092,7 +1963,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -2135,7 +2007,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -2152,7 +2025,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -2180,7 +2054,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -2223,7 +2098,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -2240,7 +2116,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -2268,7 +2145,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -2311,7 +2189,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -2328,7 +2207,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -2356,7 +2236,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -2399,7 +2280,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -2416,7 +2298,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -2444,7 +2327,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -2487,7 +2371,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -2504,7 +2389,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -2532,7 +2418,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -2575,7 +2462,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -2592,7 +2480,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -2620,7 +2509,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -2663,7 +2553,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -2680,7 +2571,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -2708,7 +2600,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -2751,7 +2644,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -2768,7 +2662,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -2796,7 +2691,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -2839,7 +2735,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -2856,7 +2753,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -2884,7 +2782,8 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -2927,7 +2826,8 @@
                 </a>
                 <a data-col href="single.html"
                    class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
-                    <div data-image class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
                         <div data-photo class="relative">
                             <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
                             <div class="product-buttons-div" style="top: 10px; left: 10px">
@@ -2944,7 +2844,8 @@
                         </div>
 
                     </div>
-                    <div data-column data-nf class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
                         <div data-np
                              class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
                             <div class="flex flex-col align-start">
@@ -2972,7 +2873,99 @@
                             </div>
 
                         </div>
-                        <div data-cart class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
+                            <div data-price class="align-center mt-19 screen-m-margin-0">
+                                <div>
+                                    <div data-nm class="mb-12">
+                                        <div class="flex align-bottom col-gap-8 h-21px mr-6">
+                                            <span data-heading class="font-semi-bold text-22">148.86€</span>
+                                            <span class="text-14 text-gray-500 linethrough">156.00<b>€</b></span>
+                                        </div>
+                                        <p data-info
+                                           class="screen-m-display-none text-gray-500 letter-spacing-n-0-22 family-outfit text-12 l-height-1-2"><span
+                                                class="text-pink-400">*</span>cena s popustom za plačilo preko UPN</p>
+                                    </div>
+
+                                </div>
+                                <div class="flex col-gap-12 screen-m-display-none">
+                                    <div data-qty class="flex col-gap-12">
+                                        <div class="quantity flex">
+                                            <input type="number" min="1" max="100" value="1" class="quantityInput">
+                                            <div class="number-buttons">
+                                                <img class="incrementBtn pointer block" src="icons/increment.svg"
+                                                     width="9px">
+                                                <img class="decrementBtn pointer block" src="icons/decrement.svg"
+                                                     width="9px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button data-w class="add-to-cart-button w-full">
+                                        Dodaj u korpu
+                                        <img src="icons/shopping-cart.svg" alt="cart-icon" width="18">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="horizontal-separator screen-m-display-none"></div>
+                            <div class="flex justify-between align-center screen-m-display-none">
+                                <span class="text-gray-500 letter-spacing-n-0-22 family-outfit text-12">Tenutno razpoložljivo</span>
+                                <span class="font-medium letter-spacing-n-0-22 family-outfit text-10">36</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <a data-col href="single.html"
+                   class="no-decoration text-black flex w-full align-center screen-lg-align-stretch radius-8 border-gray-100 border-1">
+                    <div data-image
+                         class="relative screen-m-max-w-35vw flex align-center no-shrink screen-m-border-0 border-gray-100 border-r-1">
+                        <div data-photo class="relative">
+                            <img data-img src="images/products/wheel-3.png" alt="product image" class="w-259px pv-15">
+                            <div class="product-buttons-div" style="top: 10px; left: 10px">
+                                <div class="product-button">
+                                    <img src="icons/compare-black.svg" alt="compare icon" class="h-21px">
+                                </div>
+                                <div class="product-button">
+                                    <img src="icons/heart-black.svg" alt="heart icon" class="h-21px">
+                                </div>
+                            </div>
+                            <div data-tag class="top-offer-tag yellow-only bottom-left-3 screen-m-bottom-left-15">
+                                Top ponudba
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-column data-nf
+                         class="align-self  screen-lg-pv-10 screen-lg-flex-col flex justify-between w-full">
+                        <div data-np
+                             class="screen-m-padding-0 flex pl-56 screen-lg-pl-20 flex-col align-start row-gap-15 family-outfit text-gray-900 max-w-410px">
+                            <div class="flex flex-col align-start">
+                                <img src="logo/pirelli.svg" class="prelli logo" height="30px">
+                                <span data-heading class="font-semi-bold text-21 l-height-1-3 mt-6 max-w-250px">GOODYEAR 205/55 R16 91H UltraGrip 9+</span>
+                                <span data-text class="text-16 l-height-1-2 mt-6 text-gray-500 screen-m-display-none">KUMHO AVTO guma za ZIMSKO sezono , dimenzije: 175/50/R15</span>
+                            </div>
+
+                            <div class="flex align-center col-gap-12 text-16 font-medium mt-6">
+                                <div class="flex align-center col-gap-8">
+                                    <img src="icons/rim-tyre.png" alt="rim tyre icon" height="23px">
+                                    A
+                                </div>
+                                <div class="flex align-center col-gap-8">
+                                    <img src="icons/gas-station-fuel.svg" alt="gas station fuel icon" height="23px">
+                                    B
+                                </div>
+                                <div class="flex align-center col-gap-8">
+                                    <img src="icons/sound-max.svg" alt="sound icon" height="23px">
+                                    72
+                                </div>
+                                <div class="flex align-center col-gap-8">
+                                    <img src="icons/sun.svg" alt="sun icon" height="23px">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div data-cart
+                             class="screen-m-margin-0 screen-m-mt-10 screen-m-padding-0 screen-lg-pl-20 flex-col flex row-gap-15 mr-50 w-300px">
                             <div data-price class="align-center mt-19 screen-m-margin-0">
                                 <div>
                                     <div data-nm class="mb-12">
@@ -3015,7 +3008,7 @@
                 </a>
             </div>
             <div class="flex screen-m-display-none">
-                <div  id="pagination" class="flex col-gap-16 align-center mr-88">
+                <div id="pagination" class="flex col-gap-16 align-center mr-88">
                     <span class="text-16 l-height-1-5 text-gray-900 letter-spacing-n-0-22 font-medium">Show rows:</span>
                     <div class="filter-select pagination-items">
                         <select id="itemNumber" onchange="showItems();">
