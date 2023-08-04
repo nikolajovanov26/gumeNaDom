@@ -56,9 +56,13 @@
         <div id="grid-btn" class="search-icons">
             <img src="icons/layout-grid.svg" height="16">
         </div>
-        <div data-change-order class="product-grid-trigger">
-            Razvrsti Novo
-            <img src="icons/sort-descending.svg" height="16">
+        <div class="filter-select order-dropdown">
+            <select>
+                <option value="none">Razvrsti Novo</option>
+                <option value="Date">Date</option>
+                <option value="Date">Price</option>
+                <option value="Popularity">Popularity</option>
+            </select>
         </div>
     </div>
     <div class="container-lg flex screen-m-flex-col screen-m-flex-align-initial align-start justify-between col-gap-22 pb-90">
@@ -399,22 +403,41 @@
                                     </div>
                                 </div>
 
-                                <div class="flex flex-col row-gap-8 w-full">
-                                    <div class="flex col-gap-8 align-center">
-                                        <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Ostalo</span>
-                                        <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                                <div class="flex col-gap-22">
+                                    <div class="flex flex-col row-gap-8 w-full">
+                                        <div class="flex col-gap-8 align-center">
+                                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Ostalo</span>
+                                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                                        </div>
+
+                                        <div class="filter-select">
+                                            <select name="presek">
+                                                <option>---VSI---</option>
+                                                <option value="vsi">---VSI---</option>
+                                                <option value="rft">Runflat RFT</option>
+                                                <option value="xl">XL</option>
+
+                                            </select>
+                                        </div>
                                     </div>
+                                    <div class="flex flex-col row-gap-8 w-full">
+                                        <div class="flex col-gap-8 align-center">
+                                            <span class="letter-spacing-0-4 font-bold text-14 text-gray-900 screen-m-text-12 l-height-1-7">Order By</span>
+                                            <img src="icons/question-circle-outlined.svg" alt="question icon" class="h-16px">
+                                        </div>
 
-                                    <div class="filter-select">
-                                        <select name="presek">
-                                            <option>---VSI---</option>
-                                            <option value="vsi">---VSI---</option>
-                                            <option value="rft">Runflat RFT</option>
-                                            <option value="xl">XL</option>
+                                        <div class="filter-select">
+                                            <select name="order">
+                                                <option>Default</option>
+                                                <option value="date">Date</option>
+                                                <option value="price">Price</option>
+                                                <option value="popularity">Popularity</option>
 
-                                        </select>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
+
 
                             </div>
 
